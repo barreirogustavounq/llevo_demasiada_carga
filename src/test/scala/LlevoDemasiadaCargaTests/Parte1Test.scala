@@ -7,15 +7,11 @@ class Parte1Test extends FunSuite {
 
   val inventario:Inventario = new Inventario(10)
   val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario)
-  val cinturon:Cinturon = new Cinturon(3, inventario)
-
-  this.inventario.cinturon = this.cinturon
-  this.inventario.personaje = this.personaje
-
+  val cinturon:Cinturon = new Cinturon(3)
 
 
   test("ElInventarioPuedeAgregarUnItem") {
-    val item: Item = new Item(5)
+    val item: Item = new Item("medalla",5)
 
     this.inventario.recogerItem(item)
 
@@ -23,7 +19,7 @@ class Parte1Test extends FunSuite {
   }
 
   test("ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad"){
-    val item: Item = new Item(11)
+    val item: Item = new Item("casco",11)
 
     this.inventario.recogerItem(item)
 
@@ -31,7 +27,7 @@ class Parte1Test extends FunSuite {
   }
 
   test("SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado") {
-    val item: Item = new Item(5)
+    val item: Item = new Item("medalla de plata", 5)
 
     this.inventario.recogerItem(item)
     this.inventario.tirarItem(item)

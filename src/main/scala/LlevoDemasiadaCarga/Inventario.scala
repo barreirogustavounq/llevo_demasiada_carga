@@ -1,10 +1,10 @@
 package LlevoDemasiadaCarga
 
-import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable
 
 class Inventario(var capacidad: Int){
 
-  val items = new ArrayBuffer[Item]
+  var items : mutable.Set[Item] = mutable.Set()
 
   def recogerItem(item: Item): Unit = {
     if(puedoAgregar(item)) {

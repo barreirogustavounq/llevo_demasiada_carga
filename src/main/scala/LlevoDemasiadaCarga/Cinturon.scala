@@ -2,9 +2,23 @@ package LlevoDemasiadaCarga
 
 import scala.collection.mutable
 
+class Cinturon(var nombreCinturon : String ,var capacidadCinturon:Int) extends Item(nombreCinturon ,capacidadCinturon) with Equipable {
 
-class Cinturon(var capacidadCinturon:Int) extends Inventario(capacidadCinturon) with Equipable {
+  var pociones : mutable.Set[Pocion] = mutable.Set()
 
-  override var items = mutable.Set[Pocion]
+  def agregarPocion(pocion: Pocion) = if(puedoAgregar(pocion)){pociones.add(pocion)}
+  def tirarPocion(pocion: Pocion): Unit ={
+    this.pociones.remove(pocion)
+  }
 
+
+  def puedoAgregar(pocion: Pocion): Boolean={
+    var sum:Int = 0
+    this.pociones.foreach(sum += _.volumen)
+    (this.capacidadCinturon - sum) >= pocion.volumen
+  }
+
+  def tienePocion(pocion: Pocion): Boolean={
+    this.pociones.contains(pocion)
+  }
 }
