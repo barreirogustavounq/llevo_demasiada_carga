@@ -1,0 +1,5 @@
+package LlevoDemasiadaCarga
+
+trait Equipable {
+
+}

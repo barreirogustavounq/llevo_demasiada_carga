@@ -1,5 +1,6 @@
 package LlevoDemasiadaCarga
 
-class Item(var volumen: Int) {
-  var personaje: Personaje = _
+abstract class Item(val nombre: String, var volumen: Int) {
+
+  def usar(personaje : Personaje)
 }
