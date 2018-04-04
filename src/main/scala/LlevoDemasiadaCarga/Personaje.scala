@@ -1,6 +1,11 @@
 package LlevoDemasiadaCarga
 
 class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var ataque:Int, val inventario: Inventario) {
+
+  def comprar(item: Item, vendedor: Vendedor) = {
+    vendedor.vender(item, this)
+  }
+
   var vidaActual = vidaMaxima
   var cinturon : Cinturon
 
