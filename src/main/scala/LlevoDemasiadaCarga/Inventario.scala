@@ -1,5 +1,7 @@
 package LlevoDemasiadaCarga
 
+import LlevoDemasiadaCarga.Excepciones.InsuficienteEspacioException
+
 import scala.collection.mutable
 
 class Inventario(val capacidadMaxima: Int){
@@ -8,11 +10,16 @@ class Inventario(val capacidadMaxima: Int){
   var items : mutable.Set[Item] = mutable.Set()
 
   def recogerItem(item: Item): Unit = {
-    if(puedoAgregar(item.volumen)) {
-      this.items += item
-      this.volumenCargado += item.volumen
+    try {
+      if (puedoAgregar(item.volumen)) {
+        this.items += item
+        this.volumenCargado += item.volumen
+      }
+      else { throw InsuficienteEspacioException() }
     }
-  }
+      catch { case _ : InsuficienteEspacioException => print("No tienes suficiente espacio en el inventario.\n") }
+    }
+
 
   def tirarItem(nombreItem: String): Unit = {
     try {
@@ -20,9 +27,7 @@ class Inventario(val capacidadMaxima: Int){
       this.items -= itemATirar
       this.volumenCargado -= itemATirar.volumen
 
-    } catch  {
-      case _: NoSuchElementException => print(s"No se encontro el Item $nombreItem a tirar.\n")
-    }
+    } catch  { case _: NoSuchElementException => print(s"No se encontra el Item $nombreItem a tirar.\n") }
   }
 
   def puedoAgregar(volumenDelItem: Int): Boolean={
