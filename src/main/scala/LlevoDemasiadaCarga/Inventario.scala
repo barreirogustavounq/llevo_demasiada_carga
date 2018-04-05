@@ -2,25 +2,33 @@ package LlevoDemasiadaCarga
 
 import scala.collection.mutable
 
-class Inventario(var capacidad: Int){
+class Inventario(val capacidadMaxima: Int){
 
+  var volumenCargado: Int = capacidadMaxima
   var items : mutable.Set[Item] = mutable.Set()
 
   def recogerItem(item: Item): Unit = {
-    if(puedoAgregar(item)) {
+    if(puedoAgregar(item.volumen)) {
       this.items += item
+      this.volumenCargado += item.volumen
     }
   }
 
-  def tirarItem(item: Item): Unit ={
-    this.items -= item
+  def tirarItem(nombreItem: String): Unit = {
+    try {
+      var itemATirar: Item = items.find((p:Item) => p.nombre.equals(nombreItem)).get
+      this.items -= itemATirar
+      this.volumenCargado -= itemATirar.volumen
+
+    } catch  {
+      case _: NoSuchElementException => print(s"No se encontro el Item $nombreItem a tirar. \n")
+    }
   }
 
-
-  def puedoAgregar(item: Item): Boolean={
+  def puedoAgregar(volumenDelItem: Int): Boolean={
     var sum:Int = 0
     this.items.foreach(sum += _.volumen)
-    (this.capacidad - sum) >= item.volumen
+    (this.capacidadMaxima - sum) >= volumenDelItem
   }
 
   def tieneItem(item: Item): Boolean={

@@ -1,36 +1,39 @@
 package LlevoDemasiadaCargaTests
 
 import LlevoDemasiadaCarga.{Cinturon, Inventario, Item, Personaje}
-import org.scalatest.FunSuite
+import org.scalatest.{BeforeAndAfter, FunSuite}
 
-class Parte1Test extends FunSuite {
+class Parte1Test extends FunSuite with BeforeAndAfter {
 
+  // SETUP
   val inventario:Inventario = new Inventario(10)
-  val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario)
-  val cinturon:Cinturon = new Cinturon(3)
+  val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
+  val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 0, cinturon)
 
+  // Limpia el inventario entre cada Test.
+  after{
+    inventario.items.clear()
+  }
+
+  // TESTING
 
   test("ElInventarioPuedeAgregarUnItem") {
-    val item: Item = new Item("medalla",5)
+    val medalla: Item = new Item("medalla",5)
+    this.inventario.recogerItem(medalla)
 
-    this.inventario.recogerItem(item)
-
-    assert(this.inventario.items.size == 1)
+    assert(this.inventario.items.exists(_.nombre == "medalla"))
   }
 
   test("ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad"){
-    val item: Item = new Item("casco",11)
-
-    this.inventario.recogerItem(item)
-
+    val casco: Item = new Item("casco",11)
+    this.inventario.recogerItem(casco)
     assert(this.inventario.items.isEmpty)
   }
 
   test("SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado") {
-    val item: Item = new Item("medalla de plata", 5)
-
-    this.inventario.recogerItem(item)
-    this.inventario.tirarItem(item)
+    val medallaDePlata: Item = new Item("medalla de plata", 5)
+    this.inventario.recogerItem(medallaDePlata)
+    this.inventario.tirarItem(medallaDePlata.nombre)
 
     assert(this.inventario.items.isEmpty)
   }
