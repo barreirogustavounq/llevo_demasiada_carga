@@ -21,7 +21,7 @@ class Inventario(val capacidadMaxima: Int){
       this.volumenCargado -= itemATirar.volumen
 
     } catch  {
-      case _: NoSuchElementException => print(s"No se encontro el Item $nombreItem a tirar. \n")
+      case _: NoSuchElementException => print(s"No se encontro el Item $nombreItem a tirar.\n")
     }
   }
 

@@ -38,5 +38,12 @@ class Parte1Test extends FunSuite with BeforeAndAfter {
     assert(this.inventario.items.isEmpty)
   }
 
+  test("SeTiraUnItemQueNoSeEncuentraEnElInventarioYManejaLaExcepcionImprimiendoEnPantalla"){
+    val stream = new java.io.ByteArrayOutputStream()
+    Console.withOut(stream) {
+      this.inventario.tirarItem("Espada Bastarda")
+    }
+    assertResult("No se encontro el Item Espada Bastarda a tirar.\n")(stream.toString)
+  }
 
 }
