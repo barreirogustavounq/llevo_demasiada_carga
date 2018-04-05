@@ -23,6 +23,10 @@ class Parte2Test extends FunSuite with BeforeAndAfter {
     var inventarioVendedor: Inventario = new Inventario(20)
     var vendedor: Vendedor = new Vendedor(inventarioVendedor)
 
+  before{
+    this.inventarioVendedor.recogerItem(this.arco)
+  }
+
 
   after{
     personaje.oro = 15
@@ -33,19 +37,24 @@ class Parte2Test extends FunSuite with BeforeAndAfter {
   // TESTING
 
   test("ComprarUnArcoAlVendedor"){
-    this.inventarioVendedor.recogerItem(this.arco)
     personaje.comprar(arco, vendedor)
-
     assert(personaje.oro.equals(0))
     assert(vendedor.inventario.items.isEmpty)
   }
 
   test("VenderUnArcoAlVendedor"){
-    this.inventario.recogerItem(this.arco)
-
     personaje.vender(arco, vendedor)
     assert(personaje.oro.equals(19))
     assert(personaje.inventario.items.isEmpty)
+  }
+
+  test("ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeOroYLoInformeEnPantalla"){
+    personaje.oro = 0
+    val stream = new java.io.ByteArrayOutputStream()
+    Console.withOut(stream) {
+      personaje.comprar(arco, vendedor)
+    }
+    assertResult("No tienes suficiente oro.\n")(stream.toString)
   }
 
 }
