@@ -1,4 +1,6 @@
-package LlevoDemasiadaCarga
+package LlevoDemasiadaCarga.Tomos
+
+import LlevoDemasiadaCarga.Personaje
 
 class TomoDePortal(nombreTomo : String, volumenTomo : Int) extends Tomo(nombreTomo, volumenTomo) {
   override var usos: Int = _
