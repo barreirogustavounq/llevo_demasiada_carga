@@ -17,6 +17,7 @@ class Parte1Test extends FunSuite with BeforeAndAfter {
   // Limpia el inventario entre cada Test.
   after{
     inventario.items.clear()
+    inventario.volumenCargado = 0
     stream.reset()
   }
 
@@ -45,7 +46,7 @@ class Parte1Test extends FunSuite with BeforeAndAfter {
   test("SeTiraUnItemQueNoSeEncuentraEnElInventarioYManejaLaExcepcionImprimiendoEnPantalla"){
     Console.withOut(stream) { this.inventario.tirarItem("Espada Bastarda") }
 
-    assertResult("No se encontro el Item Espada Bastarda a tirar.\n")(stream.toString)
+    assertResult("No se encuentra el Item Espada Bastarda a tirar.\n")(stream.toString)
   }
 
 }

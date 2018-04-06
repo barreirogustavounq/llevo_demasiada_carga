@@ -1,21 +1,16 @@
 package LlevoDemasiadaCarga
-
-import LlevoDemasiadaCarga.Excepciones.InsuficienteEspacioException
-
-import scala.collection.mutable
+import LlevoDemasiadaCarga.Excepciones.InsuficienteEspacioException, scala.collection.mutable
 
 class Inventario(val capacidadMaxima: Int){
 
-  var volumenCargado: Int = capacidadMaxima
+  var volumenCargado: Int = 0
   var items : mutable.Set[Item] = mutable.Set()
 
   def recogerItem(item: Item): Unit = {
     try {
-      if (puedoAgregar(item.volumen)) {
+        this.verificarSiPuedeRecogerItem(item.volumen)
         this.items += item
         this.volumenCargado += item.volumen
-      }
-      else { throw InsuficienteEspacioException() }
     }
       catch { case _ : InsuficienteEspacioException => print("No tienes suficiente espacio en el inventario.\n") }
     }
@@ -27,16 +22,16 @@ class Inventario(val capacidadMaxima: Int){
       this.items -= itemATirar
       this.volumenCargado -= itemATirar.volumen
 
-    } catch  { case _: NoSuchElementException => print(s"No se encontra el Item $nombreItem a tirar.\n") }
+    } catch  { case _: NoSuchElementException => print(s"No se encuentra el Item $nombreItem a tirar.\n") }
   }
 
-  def puedoAgregar(volumenDelItem: Int): Boolean={
-    var sum:Int = 0
-    this.items.foreach(sum += _.volumen)
-    (this.capacidadMaxima - sum) >= volumenDelItem
-  }
+  def puedoAgregar(volumenDelItem: Int): Boolean = { this.volumenDisponible() >= volumenDelItem }
 
-  def tieneItem(item: Item): Boolean={
-    this.items.contains(item)
-  }
+  def tieneItem(item: Item):Boolean = { this.items.contains(item) }
+
+  def volumenDisponible():Int = { this.capacidadMaxima - volumenCargado }
+
+  def verificarSiPuedeRecogerItem(volumenItem: Int): Unit = {
+    if (!this.puedoAgregar(volumenItem)){ throw InsuficienteEspacioException() } }
+
 }

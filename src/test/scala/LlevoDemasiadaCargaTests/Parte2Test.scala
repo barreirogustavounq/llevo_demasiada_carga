@@ -5,6 +5,8 @@ import org.scalatest.{BeforeAndAfter, FunSuite}
 
 class Parte2Test extends FunSuite with BeforeAndAfter {
 
+    val stream = new java.io.ByteArrayOutputStream()
+
     // Setup Personaje
     var inventario: Inventario = new Inventario(10)
     var cinturon: Cinturon = new Cinturon("Cinturon de Cuero", 3)
@@ -32,6 +34,7 @@ class Parte2Test extends FunSuite with BeforeAndAfter {
     personaje.oro = 15
     vendedor.inventario.items.clear()
     personaje.inventario.items.clear()
+    stream.reset()
   }
 
   // TESTING
@@ -40,21 +43,32 @@ class Parte2Test extends FunSuite with BeforeAndAfter {
     personaje.comprar(arco, vendedor)
     assert(personaje.oro.equals(0))
     assert(vendedor.inventario.items.isEmpty)
+    assert(personaje.inventario.items.exists((i:Item) => i.nombre == "Arco Largo"))
   }
 
   test("VenderUnArcoAlVendedor"){
     personaje.vender(arco, vendedor)
     assert(personaje.oro.equals(19))
     assert(personaje.inventario.items.isEmpty)
+    assert(vendedor.inventario.items.exists((i:Item) => i.nombre == "Arco Largo"))
   }
 
   test("ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeOroYLoInformeEnPantalla"){
     personaje.oro = 0
-    val stream = new java.io.ByteArrayOutputStream()
-    Console.withOut(stream) {
-      personaje.comprar(arco, vendedor)
-    }
+    Console.withOut(stream) { personaje.comprar(arco, vendedor) }
     assertResult("No tienes suficiente oro.\n")(stream.toString)
+
+    assert(personaje.inventario.items.isEmpty)
+    assert(vendedor.inventario.items.exists((i:Item) => i.nombre == "Arco Largo"))
+  }
+
+  test("ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeEspacioYLoInformeEnPantalla"){
+    personaje.inventario.volumenCargado = 10
+    Console.withOut(stream) { personaje.comprar(arco, vendedor) }
+
+    assertResult("No tienes suficiente espacio en el inventario.\n")(stream.toString)
+    assert(personaje.inventario.items.isEmpty)
+    assert(vendedor.inventario.items.exists((i:Item) => i.nombre.equals("Arco Largo")))
   }
 
 }
