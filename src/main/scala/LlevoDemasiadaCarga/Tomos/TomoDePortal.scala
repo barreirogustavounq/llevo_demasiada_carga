@@ -2,9 +2,8 @@ package LlevoDemasiadaCarga.Tomos
 
 import LlevoDemasiadaCarga.Personaje
 
-class TomoDePortal(nombreTomo : String, volumenTomo : Int) extends Tomo(nombreTomo, volumenTomo) {
-  override var usos: Int = _
+class TomoDePortal(nombreTomo : String, volumenTomo : Int, cantidadDeUsos: Int) extends Tomo(nombreTomo, volumenTomo, cantidadDeUsos) {
 
-  override def usar(personaje: Personaje): Unit = {if(puedeUsar()){println("portal abierto")} }
+  override def usar(personaje: Personaje): Unit = { super.usar(personaje) }
 
 }

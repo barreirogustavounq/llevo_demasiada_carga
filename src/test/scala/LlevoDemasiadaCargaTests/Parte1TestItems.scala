@@ -1,5 +1,6 @@
 package LlevoDemasiadaCargaTests
 
+import LlevoDemasiadaCarga.Tomos.{Tomo, TomoDePortal}
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
@@ -10,6 +11,7 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
   val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 0, cinturon)
   val pocionDeVida: Pocion = new Pocion("Pocion de vida menor", 1, 5)
+  val tomo: Tomo = new TomoDePortal("Tomo de Portal a Tristan", 2, 2)
 
   // Limpia el inventario entre cada Test.
   after{
@@ -28,6 +30,11 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
 
 
   // Un Personaje usa un Item Consumible y se disminuye la cantidad de usos.
+  test("ElPersonajeUsaUnTomoElCualDisminuyeSuCantidadDeUsos") {
+    assert(this.tomo.cantidadDeUsos.equals(2))
+    this.personaje.usarItem(tomo)
+    assert(this.tomo.cantidadDeUsos.equals(1))
+  }
 
   // Un personaje usa un ultimo Item Consumible y se remueve del Inventario.
 
@@ -38,5 +45,6 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   // Se mueve una Pocion del Cinturon al Inventario.
 
   // Se intenta mover un Item que no es una Pocion al Cinturon, e imprime un mensaje de error en pantalla.
+
 
 }
