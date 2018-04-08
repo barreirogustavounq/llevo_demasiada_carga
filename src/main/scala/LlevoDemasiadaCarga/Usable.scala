@@ -1,7 +1,5 @@
 package LlevoDemasiadaCarga
 
-trait Usable
-{
-  def usar()
-  def efecto(personaje : Personaje)
+class Usable(nombre: String, volumen: Int) extends Item(nombre, volumen) {
+  override def usar(personaje: Personaje): Unit = { }
 }

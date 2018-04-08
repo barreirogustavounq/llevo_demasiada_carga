@@ -1,4 +1,6 @@
-package LlevoDemasiadaCarga
+package LlevoDemasiadaCarga.Efectos
+
+import LlevoDemasiadaCarga.Personaje
 
 trait EfectoVidaMaxima {
   def valorDeEfecto:Int

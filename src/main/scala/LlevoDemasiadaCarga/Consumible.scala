@@ -1,8 +1,9 @@
 package LlevoDemasiadaCarga
 
-trait Consumible
-{
+trait Consumible extends Usable {
   var cantidadDeUsos: Int
 
-  def usar(personaje: Personaje)
+  override def usar(personaje: Personaje): Unit = {
+    super.usar(personaje)
+    cantidadDeUsos -= 1 }
 }

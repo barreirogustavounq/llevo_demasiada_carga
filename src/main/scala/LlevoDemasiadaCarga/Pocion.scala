@@ -1,10 +1,21 @@
 package LlevoDemasiadaCarga
 
-class Pocion(nombre : String, volumen: Int) extends Item(nombre,volumen) with Consumible with Apilable {
-  override var cantidadDeUsos: Int = _
-  override var cantidad: Int = _
+import LlevoDemasiadaCarga.Efectos.EfectoVidaActual
 
-  override def aumentarPila(): Unit = {}
+class Pocion(nombre : String, volumen: Int, unValorDeEfecto: Int) extends Usable(nombre,volumen) with Consumible
+                                                                    //with Apilable
+                                                                    with EfectoVidaActual {
 
-  override def disminuirPila(): Unit = {}
+  override var cantidadDeUsos: Int = 1
+  override def valorDeEfecto: Int = unValorDeEfecto
+
+  override def usar(personaje: Personaje): Unit = super.usar(personaje)
 }
+
+// class item
+//
+
+
+// trait usable
+// trait consumible
+// trait efecto vida actual

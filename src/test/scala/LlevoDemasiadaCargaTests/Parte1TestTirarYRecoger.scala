@@ -3,7 +3,7 @@ package LlevoDemasiadaCargaTests
 import LlevoDemasiadaCarga.{Cinturon, Inventario, Item, Personaje}
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
-class Parte1Test extends FunSuite with BeforeAndAfter {
+class Parte1TestTirarYRecoger extends FunSuite with BeforeAndAfter {
 
   // SETUP
   val inventario:Inventario = new Inventario(10)
@@ -41,6 +41,7 @@ class Parte1Test extends FunSuite with BeforeAndAfter {
     this.inventario.tirarItem(medallaDePlata.nombre)
 
     assert(this.inventario.items.isEmpty)
+    assert(this.inventario.volumenCargado.equals(0))
   }
 
   test("SeTiraUnItemQueNoSeEncuentraEnElInventarioYManejaLaExcepcionImprimiendoEnPantalla"){

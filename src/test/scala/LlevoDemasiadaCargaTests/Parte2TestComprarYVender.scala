@@ -3,7 +3,7 @@ package LlevoDemasiadaCargaTests
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
-class Parte2Test extends FunSuite with BeforeAndAfter {
+class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
 
     val stream = new java.io.ByteArrayOutputStream()
 
