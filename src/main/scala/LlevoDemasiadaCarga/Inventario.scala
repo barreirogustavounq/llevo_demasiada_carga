@@ -11,6 +11,7 @@ class Inventario(val capacidadMaxima: Int){
         this.verificarSiPuedeRecogerItem(item.volumen)
         this.items += item
         this.volumenCargado += item.volumen
+        item.guardarEn(this)
     }
       catch { case _ : InsuficienteEspacioException => print("No tienes suficiente espacio en el inventario.\n") }
     }
@@ -21,9 +22,11 @@ class Inventario(val capacidadMaxima: Int){
       var itemATirar: Item = items.find((p:Item) => p.nombre.equals(nombreItem)).get
       this.items -= itemATirar
       this.volumenCargado -= itemATirar.volumen
+      itemATirar.tirar()
+    }
+    catch  { case _: NoSuchElementException => print(s"No se encuentra el Item $nombreItem a tirar.\n") }
+    }
 
-    } catch  { case _: NoSuchElementException => print(s"No se encuentra el Item $nombreItem a tirar.\n") }
-  }
 
   def puedoAgregar(volumenDelItem: Int): Boolean = { this.volumenDisponible() >= volumenDelItem }
 

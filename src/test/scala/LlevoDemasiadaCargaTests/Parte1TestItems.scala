@@ -1,5 +1,6 @@
 package LlevoDemasiadaCargaTests
 
+import LlevoDemasiadaCarga.Estados.EstadosDeUso.{EstadoDeUso, EstadoDeUsoDisponible, EstadoDeUsoNoDisponible}
 import LlevoDemasiadaCarga.Tomos.{Tomo, TomoDePortal}
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
@@ -12,6 +13,15 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 0, cinturon)
   val pocionDeVida: Pocion = new Pocion("Pocion de vida menor", 1, 5)
   val tomo: Tomo = new TomoDePortal("Tomo de Portal a Tristan", 2, 2)
+  val estadoDeUsoDisponible: EstadoDeUso = new EstadoDeUsoDisponible
+  val estadoDeUsoNoDisponible: EstadoDeUso = new EstadoDeUsoNoDisponible
+  this.tomo.estadosDeUso.add(estadoDeUsoDisponible)
+  this.tomo.estadosDeUso.add(estadoDeUsoNoDisponible)
+
+  before{
+    this.personaje.recogerItem(tomo)
+    this.tomo.cantidadDeUsos = 2
+  }
 
   // Limpia el inventario entre cada Test.
   after{
@@ -37,6 +47,13 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   }
 
   // Un personaje usa un ultimo Item Consumible y se remueve del Inventario.
+  test("ElPersonajeUsaUnUltimoTomoYSeRemueveDelInventario") {
+    this.personaje.usarItem(tomo)
+    this.personaje.usarItem(tomo)
+
+    assert(this.tomo.cantidadDeUsos.equals(0))
+    assert(!this.personaje.inventario.tieneItem(tomo))
+  }
 
   // Un Personaje usa una Pocion y se remueve del Inventario.
 
@@ -44,7 +61,7 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
 
   // Se mueve una Pocion del Cinturon al Inventario.
 
-  // Se intenta mover un Item que no es una Pocion al Cinturon, e imprime un mensaje de error en pantalla.
+  // Se intenta mover un Item que no es una Pocion al Cinturon, y no puede.
 
 
 }
