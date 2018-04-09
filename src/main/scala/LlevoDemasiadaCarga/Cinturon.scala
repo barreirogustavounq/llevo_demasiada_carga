@@ -21,4 +21,6 @@ class Cinturon(var nombreCinturon : String ,var capacidadCinturon:Int) extends I
   def tienePocion(pocion: Pocion): Boolean={
     this.pociones.contains(pocion)
   }
+
+  override def usar(personaje: Personaje): Unit = {}
 }

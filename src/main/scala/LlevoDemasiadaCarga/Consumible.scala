@@ -4,15 +4,15 @@ import LlevoDemasiadaCarga.Estados.EstadosDeUso.EstadoDeUso
 
 import scala.collection.mutable
 
-trait Consumible extends Usable {
+trait Consumible extends Item {
 
   var cantidadDeUsos: Int
   var estadosDeUso: mutable.Set[EstadoDeUso] = mutable.Set()
 
-  override def usar(personaje: Personaje): Unit = {
-    super.usar(personaje)
+  abstract override def usar(personaje: Personaje): Unit = {
     this.cantidadDeUsos -= 1
     this.verificarDisponibilidad()
+    super.usar(personaje)
   }
 
   // Verifica si puede seguir usando este Consumible dada su cantidadDeUsos.

@@ -37,4 +37,8 @@ class Inventario(val capacidadMaxima: Int){
   def verificarSiPuedeRecogerItem(volumenItem: Int): Unit = {
     if (!this.puedoAgregar(volumenItem)){ throw InsuficienteEspacioException() } }
 
+  def tirarTodo(): Unit = {
+    this.volumenCargado = 0
+    this.items.clear()
+  }
 }

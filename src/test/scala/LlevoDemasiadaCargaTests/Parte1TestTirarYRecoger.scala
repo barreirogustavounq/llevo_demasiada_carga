@@ -1,6 +1,6 @@
 package LlevoDemasiadaCargaTests
 
-import LlevoDemasiadaCarga.{Cinturon, Inventario, Item, Personaje}
+import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
 class Parte1TestTirarYRecoger extends FunSuite with BeforeAndAfter {
@@ -9,9 +9,9 @@ class Parte1TestTirarYRecoger extends FunSuite with BeforeAndAfter {
   val inventario:Inventario = new Inventario(10)
   val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
   val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 0, cinturon)
-  val casco: Item = new Item("casco",11)
-  val medalla: Item = new Item("medalla",5)
-  val medallaDePlata: Item = new Item("medalla de plata", 5)
+  val casco: Item = new Usable("casco",11)
+  val medalla: Item = new Usable("medalla",5)
+  val medallaDePlata: Item = new Usable("medalla de plata", 5)
   val stream = new java.io.ByteArrayOutputStream()
 
   // Limpia el inventario entre cada Test.

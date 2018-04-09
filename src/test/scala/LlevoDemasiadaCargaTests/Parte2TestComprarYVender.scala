@@ -16,7 +16,7 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
 
     // Setup Item Comerciable
     def arco: Comerciable =
-      new Item("Arco Largo", 5) with Comerciable {
+      new Usable("Arco Largo", 5) with Comerciable {
         override val precioVenta: Int = 4
         override val precioCompra: Int = 15
       }

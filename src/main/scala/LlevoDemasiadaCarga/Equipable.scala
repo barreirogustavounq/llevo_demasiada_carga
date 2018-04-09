@@ -1,5 +1,5 @@
 package LlevoDemasiadaCarga
 
-trait Equipable {
+trait Equipable extends Item{
 
 }

@@ -1,10 +1,13 @@
 package LlevoDemasiadaCarga.Efectos
 
-import LlevoDemasiadaCarga.{Personaje, Usable}
+import LlevoDemasiadaCarga.{Item, Personaje}
 
-trait EfectoVidaActual extends Usable{
+trait EfectoVidaActual extends Item {
   def valorDeEfecto: Int
 
-  override def usar(personaje: Personaje): Unit = { personaje.vidaActual += this.valorDeEfecto }
+  abstract override def usar(personaje: Personaje): Unit = {
+    personaje.vidaActual += this.valorDeEfecto
+    super.usar(personaje)
+  }
 
 }

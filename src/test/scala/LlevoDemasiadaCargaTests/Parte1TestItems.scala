@@ -15,18 +15,22 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   val tomo: Tomo = new TomoDePortal("Tomo de Portal a Tristan", 2, 2)
   val estadoDeUsoDisponible: EstadoDeUso = new EstadoDeUsoDisponible
   val estadoDeUsoNoDisponible: EstadoDeUso = new EstadoDeUsoNoDisponible
+
   this.tomo.estadosDeUso.add(estadoDeUsoDisponible)
   this.tomo.estadosDeUso.add(estadoDeUsoNoDisponible)
+  this.pocionDeVida.estadosDeUso.add(estadoDeUsoDisponible)
+  this.pocionDeVida.estadosDeUso.add(estadoDeUsoNoDisponible)
 
   before{
     this.personaje.recogerItem(tomo)
+    this.personaje.recogerItem(pocionDeVida)
     this.tomo.cantidadDeUsos = 2
+    this.pocionDeVida.cantidadDeUsos = 1
   }
 
   // Limpia el inventario entre cada Test.
   after{
-    inventario.items.clear()
-    inventario.volumenCargado = 0
+    inventario.tirarTodo()
   }
 
   // TESTING
@@ -56,6 +60,14 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   }
 
   // Un Personaje usa una Pocion y se remueve del Inventario.
+  test("ElPersonajeUsaUnaPocionDelInventarioYEstaEsRemovida") {
+    this.personaje.usarItem(pocionDeVida)
+
+    assert(this.pocionDeVida.cantidadDeUsos.equals(0))
+    assert(!this.personaje.inventario.tieneItem(pocionDeVida))
+    assert(this.pocionDeVida.esAlmacenadoEn == null)
+  }
+
 
   // Se mueve una Pocion del Inventario al Cinturon.
 
