@@ -2,7 +2,7 @@ package LlevoDemasiadaCarga
 
 import scala.collection.mutable
 
-class Cinturon(var nombreCinturon : String ,var capacidadCinturon:Int) extends Item(nombreCinturon ,capacidadCinturon) with Equipable {
+class Cinturon(var nombreCinturon : String ,var capacidadCinturon:Int) extends ItemBasico(nombreCinturon ,capacidadCinturon) with Equipable {
 
   var pociones : mutable.Set[Pocion] = mutable.Set()
 

@@ -30,7 +30,7 @@ class Vendedor(var inventario: Inventario) {
       this.verificaSiPuedeVenderA(personaje, item)
       personaje.removerOro(item.precioCompra)
       personaje.recogerItem(item)
-      inventario.tirarItem(item.nombre)
+      inventario.tirarItem(item)
     }
     catch { case _ : InsuficienteOroException => print("No tienes suficiente oro.\n")
             case _ : InsuficienteEspacioException => print("No tienes suficiente espacio en el inventario.\n")

@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga
 
-trait Comerciable extends Item {
+trait Comerciable extends ItemBasico {
   val precioVenta: Int
   val precioCompra: Int
 }
