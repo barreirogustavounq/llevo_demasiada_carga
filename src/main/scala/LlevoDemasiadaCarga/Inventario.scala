@@ -6,15 +6,12 @@ class Inventario(val capacidadMaxima: Int){
   var items : mutable.Set[Item] = mutable.Set()
 
   def recogerItem(item: Item): Unit = {
-    try {
-        this.puedoAgregar(item.volumen)
-        this.items += item
-    }
-      catch { case _ : InsuficienteEspacioException => print("No tienes suficiente espacio en el inventario.\n") }
-    }
+    if (puedoAgregar(item.volumen)) { this.items += item }
+    else throw InsuficienteEspacioException()
+  }
 
   def tirarItem(item: Item): Unit = {
-    if (this.tieneItem(item)) this.items -= item
+    if (this.tieneItem(item)) { this.items -= item }
   }
 
   def puedoAgregar(volumenDelItem: Int): Boolean = { this.volumenDisponible() >= volumenDelItem }

@@ -1,5 +1,6 @@
 package LlevoDemasiadaCargaTests
 
+import LlevoDemasiadaCarga.Excepciones.InsuficienteEspacioException
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
@@ -29,10 +30,7 @@ class Parte1TestTirarYRecoger extends FunSuite with BeforeAndAfter {
   }
 
   test("ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad"){
-    Console.withOut(stream) { this.inventario.recogerItem(casco) }
-
-    assertResult("No tienes suficiente espacio en el inventario.\n")(stream.toString)
-    assert(this.inventario.items.isEmpty)
+    assertThrows[InsuficienteEspacioException] { this.inventario.recogerItem(casco) }
   }
 
   test("SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado") {
@@ -41,12 +39,6 @@ class Parte1TestTirarYRecoger extends FunSuite with BeforeAndAfter {
 
     assert(this.inventario.items.isEmpty)
     assert(this.inventario.volumenDisponible() == 10)
-  }
-
-  test("SeTiraUnItemQueNoSeEncuentraEnElInventarioYManejaLaExcepcionImprimiendoEnPantalla"){
-    Console.withOut(stream) { this.inventario.tirarItem(this.medallaDePlata) }
-
-    assertResult("No se encuentra el Item Espada Bastarda a tirar.\n")(stream.toString)
   }
 
 }
