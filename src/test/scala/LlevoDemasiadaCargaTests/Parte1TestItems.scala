@@ -9,18 +9,17 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   val inventario:Inventario = new Inventario(10)
   val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
   val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 0, cinturon)
-  val pocionDeVida: Pocion = new Pocion("Pocion de vida menor", 1, 1, 5)
-  val tomo:ItemBasico = new ItemBasico("Tomo de Portal a Tristan", 1)
+  val pocionDeVida: Pocion = new Pocion("Pocion de vida menor", 1, 5)
+  val tomo:ItemBasico = new ItemBasico("Tomo de Portal a Tristan", 1) with Consumible{override var cantidadDeUsos=2}
 
-
-  /*before{
+  before{
     this.personaje.recogerItem(pocionDeVida)
   }
 
   // Limpia el inventario entre cada Test.
   after{
     inventario.tirarTodo()
-  }*/
+  }
 
   // TESTING
 
@@ -29,15 +28,14 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
     this.personaje.recogerItem(this.pocionDeVida)
     this.personaje.vidaActual = 90
     this.personaje.usarItem(pocionDeVida)
+
     assert(this.personaje.vidaActual.equals(95))
   }
 
-/*
+
   // Un Personaje usa un Item Consumible y se disminuye la cantidad de usos.
   test("ElPersonajeUsaUnTomoElCualDisminuyeSuCantidadDeUsos") {
-    assert(this.tomo.cantidadDeUsos.equals(2))
     this.personaje.usarItem(tomo)
-    assert(this.tomo.cantidadDeUsos.equals(1))
   }
 
   // Un personaje usa un ultimo Item Consumible y se remueve del Inventario.
@@ -45,7 +43,6 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
     this.personaje.usarItem(tomo)
     this.personaje.usarItem(tomo)
 
-    assert(this.tomo.cantidadDeUsos.equals(0))
     assert(!this.personaje.inventario.tieneItem(tomo))
   }
 
@@ -55,7 +52,6 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
 
     assert(this.pocionDeVida.cantidadDeUsos.equals(0))
     assert(!this.personaje.inventario.tieneItem(pocionDeVida))
-    assert(this.pocionDeVida.esAlmacenadoEn == null)
   }
 
 
@@ -65,5 +61,4 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
 
   // Se intenta mover un Item que no es una Pocion al Cinturon, y no puede.
 
-*/
 }

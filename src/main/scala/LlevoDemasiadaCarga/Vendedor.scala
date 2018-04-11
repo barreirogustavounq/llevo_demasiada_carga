@@ -21,7 +21,7 @@ class Vendedor(var inventario: Inventario) {
   def comprar(item: Comerciable, personaje: Personaje): Unit = {
     personaje.adquirirOro(item.precioVenta)
     personaje.tirarItem(item)
-    inventario.recogerItem(item)
+    inventario.recogerItem(item) // chequear que el item se esta guardando en vez de ser tirado y puede causar problemas
   }
 
   // El Vendedor vende un item al Personaje.
