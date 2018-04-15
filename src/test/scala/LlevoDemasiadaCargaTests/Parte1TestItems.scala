@@ -12,6 +12,7 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   val pocionDeVida: Pocion = new Pocion("Pocion de vida menor", 1, 5)
   val tomo:ItemBasico = new ItemBasico("Tomo de Portal a Tristan", 1) with Consumible{override var cantidadDeUsos=2}
 
+
   before{
     this.personaje.recogerItem(pocionDeVida)
   }
@@ -28,7 +29,6 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
     this.personaje.recogerItem(this.pocionDeVida)
     this.personaje.vidaActual = 90
     this.personaje.usarItem(pocionDeVida)
-
     assert(this.personaje.vidaActual.equals(95))
   }
 

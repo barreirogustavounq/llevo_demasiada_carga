@@ -30,10 +30,15 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
       inventario.tirarItem(pocion)
     }
   }
+
   def moverAlInventario(pocion: Pocion): Unit ={
     if(this.inventario.puedoAgregar(pocion.volumen)){
       this.inventario.recogerItem(pocion)
       this.cinturon.tienePocion(pocion)
     }
+  }
+
+  def tieneItem(item:ItemBasico): Boolean={
+    return this.inventario.tieneItem(item)
   }
 }

@@ -12,7 +12,7 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
     var personaje: Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 15, cinturon)
 
     // Setup Item Comerciable
-    def arco: Comerciable = new ItemBasico("Arco Largo", 5) with Comerciable {
+    val arco: Comerciable = new ItemBasico("Arco Largo", 5) with Comerciable {
         override val precioVenta: Int = 4
         override val precioCompra: Int = 15
       }
@@ -36,14 +36,13 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
   // TESTING
 
   test("ComprarUnArcoAlVendedor"){
-    //vendedor.inventario.recogerItem(arco)
-    //assert(vendedor.inventario.tieneItem(arco))
-    //personaje.comprar(arco, vendedor)
-    //assert(personaje.oro.equals(0))
-    //assert(vendedor.inventario.items.isEmpty)
-    //assert(personaje.inventario.tieneItem(arco))
+    assert(vendedor.inventario.tieneItem(arco))
+    personaje.comprar(arco, vendedor)
+    assert(personaje.oro.equals(0))
+    assert(vendedor.inventario.items.isEmpty)
+    assert(personaje.inventario.tieneItem(arco))
   }
-/*
+
   test("VenderUnArcoAlVendedor"){
     personaje.vender(arco, vendedor)
     assert(personaje.oro.equals(19))
@@ -60,7 +59,7 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
     assert(vendedor.inventario.tieneItem(arco))
   }
 
-  test("ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeEspacioYLoInformeEnPantalla"){
+  /*test("ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeEspacioYLoInformeEnPantalla"){
     var roca:Item = new ItemBasico("Roca", 10)
     personaje.recogerItem(roca)
     Console.withOut(stream) { personaje.comprar(arco, vendedor) }
@@ -68,6 +67,6 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
     assertResult("No tienes suficiente espacio en el inventario.\n")(stream.toString)
     assert(personaje.inventario.items.isEmpty)
     assert(vendedor.inventario.tieneItem(arco))
-  }
-*/
+  }*/
+
 }

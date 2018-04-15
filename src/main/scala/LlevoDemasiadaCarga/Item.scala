@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga
 
 abstract class Item {
-  val volumen: Int
+  var volumen: Int //Esta de mas -- SACAR
   def usar(personaje: Personaje): Unit
 }

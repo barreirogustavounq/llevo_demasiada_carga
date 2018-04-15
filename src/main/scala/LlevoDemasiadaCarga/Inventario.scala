@@ -19,7 +19,7 @@ class Inventario(val capacidadMaxima: Int){
 
   def puedoAgregar(volumenDelItem: Int): Boolean = { this.volumenDisponible() >= volumenDelItem }
 
-  def tieneItem(item: Item):Boolean = { this.items.contains(item) }
+  def tieneItem(item: Item):Boolean = { return this.items.contains(item) }
 
   def volumenDisponible():Int = { this.capacidadMaxima - items.map(_.volumen).sum  }
 
