@@ -5,7 +5,6 @@ class ItemBasico(val nombre: String,var volumen: Int) extends Item{
   val precioVenta: Int = 0
   val precioCompra: Int = 0
 
-  override def usar(personaje: Personaje): Unit={}
 
   def calcularPrecioCompra():Int={
     return precioCompra
@@ -14,5 +13,7 @@ class ItemBasico(val nombre: String,var volumen: Int) extends Item{
   def calcularPrecioVenta():Int={
     return precioVenta
   }
+
+  override def usar(personaje: Personaje): Unit={}
 
 }

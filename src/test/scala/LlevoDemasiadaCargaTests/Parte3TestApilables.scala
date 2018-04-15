@@ -19,7 +19,6 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
   val flecha1: Flecha = new Flecha
   val flecha2: Flecha = new Flecha
   val flecha3: Flecha = new Flecha
-  //var pila = new Pila("Flechas")
 
   var inventarioVendedor: Inventario = new Inventario(20)
   var vendedor: Vendedor = new Vendedor(inventarioVendedor)

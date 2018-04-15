@@ -17,7 +17,7 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
         override val precioCompra: Int = 15
       }
 
-    // Setup Vendedor
+  // Setup Vendedor
     var inventarioVendedor: Inventario = new Inventario(20)
     var vendedor: Vendedor = new Vendedor(inventarioVendedor)
 
@@ -36,7 +36,6 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
   // TESTING
 
   test("ComprarUnArcoAlVendedor"){
-    assert(vendedor.inventario.tieneItem(arco))
     personaje.comprar(arco, vendedor)
     assert(personaje.oro.equals(0))
     assert(vendedor.inventario.items.isEmpty)
@@ -62,11 +61,12 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
   /*test("ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeEspacioYLoInformeEnPantalla"){
     var roca:Item = new ItemBasico("Roca", 10)
     personaje.recogerItem(roca)
-    Console.withOut(stream) { personaje.comprar(arco, vendedor) }
+    Console.withOut(stream) { personaje.comprar(arcoLargo, vendedor) }
 
     assertResult("No tienes suficiente espacio en el inventario.\n")(stream.toString)
     assert(personaje.inventario.items.isEmpty)
     assert(vendedor.inventario.tieneItem(arco))
   }*/
+
 
 }

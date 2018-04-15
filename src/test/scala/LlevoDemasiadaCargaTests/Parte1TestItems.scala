@@ -15,6 +15,7 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
 
   before{
     this.personaje.recogerItem(pocionDeVida)
+    this.pocionDeVida.cantidadDeUsos = 1
   }
 
   // Limpia el inventario entre cada Test.

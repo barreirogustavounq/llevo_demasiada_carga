@@ -4,26 +4,6 @@ import LlevoDemasiadaCarga.Pilas.{EstadoDeApilamiento, NoApilado}
 
 trait Apilable extends ItemBasico
 {
-  /*val tipo : String
-  var cantidad : Int
-  val maximo : Int
-
-  def aumentarPila() {cantidad += 1}
-  def disminuirPila() {cantidad -= 1}
-  def apilarItems(item1 : Apilable, item2 : Apilable){ }
-  def usarPila()
-  def precioCompraPila()
-  def precioVentaPila()*/
-
-
-  /*val pila:mutable.Set[T] = mutable.Set()
-
-  def apilar(apilable: T):Unit={
-    this.pila.add(apilable)
-  }
-
-  override val
-*/
   var estado:EstadoDeApilamiento = new NoApilado
   var siguientePila:Apilable = null
   var anteriorPila:Apilable = null
@@ -74,3 +54,4 @@ trait Apilable extends ItemBasico
     estado.calcularPrecioVenta(this, this.precioVenta)
   }
 }
+
