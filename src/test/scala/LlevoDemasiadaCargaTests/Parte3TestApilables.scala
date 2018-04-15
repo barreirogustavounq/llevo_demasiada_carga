@@ -1,6 +1,7 @@
 package LlevoDemasiadaCargaTests
 
 import LlevoDemasiadaCarga.Efectos.EfectoVidaActual
+import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DifenteTipoException}
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
@@ -10,7 +11,17 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
     override val precioVenta: Int = 2
     override var valorDeEfecto: Int = 10
     override var cantidadDeUsos: Int = 1
+    override var cantidadMaximaApilables = 5
   }
+
+  class Saeta extends ItemBasico("Flecha", 2) with Comerciable with Consumible with EfectoVidaActual with Apilable{
+    override val precioCompra: Int = 1
+    override val precioVenta: Int = 2
+    override var valorDeEfecto: Int = 10
+    override var cantidadDeUsos: Int = 1
+    override var cantidadMaximaApilables = 5
+  }
+  val stream = new java.io.ByteArrayOutputStream()
 
   val inventario:Inventario = new Inventario(10)
   val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
@@ -41,58 +52,155 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
 /*CASOS POSITIVOS */
 
   test("Apilo3FlechasYPidoLaCantidadDeItems"){
-    this.flecha1.apilar(this.flecha2)
-    this.flecha1.apilar(this.flecha3)
+    this.flecha1.apilar(this.flecha2, this.inventario)
+    this.flecha1.apilar(this.flecha3, this.inventario)
     assert(this.flecha1.cantidadDeApilables() == 3)
   }
 
   test("AgregoTresFlechasYVeoElVolumenDeLaPila"){
-    this.flecha1.apilar(this.flecha2)
-    this.flecha1.apilar(this.flecha3)
+    this.flecha1.apilar(this.flecha2, this.inventario)
+    this.flecha1.apilar(this.flecha3, this.inventario)
     assert(this.flecha1.calcularVolumen() == 3)
   }
 
   test("UsoUnaPilaDe3FlechasCon1UsoCadaUnaYUnaDesaparece"){
-    this.flecha1.apilar(this.flecha2)
-    this.flecha1.apilar(this.flecha3)
+    this.flecha1.apilar(this.flecha2, this.inventario)
+    this.flecha1.apilar(this.flecha3, this.inventario)
     assert(this.flecha1.cantidadDeApilables() == 3)
     this.flecha1.usar(this.personaje)
     assert(this.flecha1.cantidadDeApilables() == 2)
   }
 
   test("UsoUnaPilaDe3FlechasYAlPersonajeSeLeModificaLaVidaActual"){
-    this.flecha1.apilar(this.flecha2)
-    this.flecha1.apilar(this.flecha3)
+    this.flecha1.apilar(this.flecha2, this.inventario)
+    this.flecha1.apilar(this.flecha3, this.inventario)
     assert(this.personaje.vidaActual == 100)
     this.flecha1.usar(this.personaje)
     assert(this.personaje.vidaActual == 110)
   }
 
   test("Saco1FlechaDeUnaPilaCon3Flechas"){
-    this.flecha1.apilar(this.flecha2)
-    this.flecha1.apilar(this.flecha3)
+    this.flecha1.apilar(this.flecha2, this.inventario)
+    this.flecha1.apilar(this.flecha3, this.inventario)
     assert(this.flecha1.cantidadDeApilables() == 3)
     var flecha = this.flecha1.desapilar()
     assert(this.flecha1.cantidadDeApilables() == 2)
   }
 
-  test("VendoUnaPilaDe3FlechasYElPersonajeYaNoLosTieneEnInventario"){
-    this.flecha1.apilar(this.flecha2)
-    this.flecha1.apilar(this.flecha3)
+  /*------- Test de ventas -------*/
+
+  test("VendoUnaPilaDe3FlechasYElPersonajeYaNoTieneLaPilaEnElInventario"){
+    this.flecha1.apilar(this.flecha2, this.inventario)
+    this.flecha1.apilar(this.flecha3, this.inventario)
     assert(this.personaje.tieneItem(flecha1))
-    assert(this.personaje.tieneItem(flecha2))
-    assert(this.personaje.tieneItem(flecha3))
 
-    assert(flecha1.calcularPrecioVenta()==6)
-    assert(flecha1.calcularPrecioCompra()==3)
-    /*personaje.vender(this.flecha1, vendedor)
-    assert(personaje.oro.equals(19))*/
-
+    personaje.vender(this.flecha1, vendedor)
+    assert(!this.personaje.tieneItem(this.flecha1))
   }
 
+  test("VendoUnaPilaDe3FlechasYAlPersonajeLeSubeLaCantidadDeOro"){
+    this.flecha1.apilar(this.flecha2, this.inventario)
+    this.flecha1.apilar(this.flecha3, this.inventario)
 
+    personaje.vender(this.flecha1, vendedor)
+    assert(personaje.oro.equals(6))
+  }
 
+  test("VendoUnaPilaDe3FlechasYElVendedorTieneLaPilaEnSuInventario"){
+    this.flecha1.apilar(this.flecha2, this.inventario)
+    this.flecha1.apilar(this.flecha3, this.inventario)
 
+    personaje.vender(this.flecha1, vendedor)
+    assert(this.vendedor.inventario.tieneItem(this.flecha1))
+  }
 
+  /*------- Test de compras -------*/
+
+  test("CompraUnaPilaDe3FlechasYElPersonajeTieneLaPilaEnElInventario"){
+    val flecha4:Flecha = new Flecha
+    val flecha5:Flecha = new Flecha
+    val flecha6:Flecha = new Flecha
+
+    vendedor.inventario.recogerItem(flecha4)
+    vendedor.inventario.recogerItem(flecha5)
+    vendedor.inventario.recogerItem(flecha6)
+
+    flecha4.apilar(flecha5, this.vendedor.inventario)
+    flecha4.apilar(flecha6, this.vendedor.inventario)
+
+    personaje.oro = 10
+    personaje.comprar(flecha4, this.vendedor)
+
+    assert(this.personaje.tieneItem(flecha4))
+  }
+
+  test("CompraUnaPilaDe3FlechasYAlPersonajeLeBajaLaCantidadDeOro"){
+    val flecha4:Flecha = new Flecha
+    val flecha5:Flecha = new Flecha
+    val flecha6:Flecha = new Flecha
+
+    vendedor.inventario.recogerItem(flecha4)
+    vendedor.inventario.recogerItem(flecha5)
+    vendedor.inventario.recogerItem(flecha6)
+
+    flecha4.apilar(flecha5, this.vendedor.inventario)
+    flecha4.apilar(flecha6, this.vendedor.inventario)
+
+    personaje.oro = 10
+    personaje.comprar(flecha4, this.vendedor)
+
+    assert(this.personaje.oro == 7)
+  }
+
+  test("CompraUnaPilaDe3FlechasYElVendedorYaNoTieneLaPila"){
+    val flecha4:Flecha = new Flecha
+    val flecha5:Flecha = new Flecha
+    val flecha6:Flecha = new Flecha
+
+    vendedor.inventario.recogerItem(flecha4)
+    vendedor.inventario.recogerItem(flecha5)
+    vendedor.inventario.recogerItem(flecha6)
+
+    flecha4.apilar(flecha5, this.vendedor.inventario)
+    flecha4.apilar(flecha6, this.vendedor.inventario)
+
+    personaje.oro = 10
+    personaje.comprar(flecha4, this.vendedor)
+
+    assert(!this.vendedor.inventario.tieneItem(flecha4))
+  }
+
+  /*CASOS NEGATIVOS*/
+
+  test("NoSePuedeApilarUnaFlechaConUnaSaeta"){
+    var flechaNueva:Flecha = new Flecha
+    var saetaNueva:Saeta = new Saeta
+
+    this.personaje.recogerItem(flechaNueva)
+    this.personaje.recogerItem(saetaNueva)
+
+    assertThrows[DifenteTipoException] {
+      flechaNueva.apilar(saetaNueva, this.personaje.inventario)
+    }
+  }
+
+  test("NoSePuedenApilarMasDe5Flechas"){
+    val flecha4:Flecha = new Flecha
+    val flecha5:Flecha = new Flecha
+    val flecha6:Flecha = new Flecha
+
+    this.personaje.recogerItem(flecha4)
+    this.personaje.recogerItem(flecha5)
+    this.personaje.recogerItem(flecha6)
+
+    this.flecha1.apilar(flecha2, this.personaje.inventario)
+    this.flecha1.apilar(flecha3, this.personaje.inventario)
+    this.flecha1.apilar(flecha4, this.personaje.inventario)
+    this.flecha1.apilar(flecha5, this.personaje.inventario)
+
+    assertThrows[CantidadDeApilablesAlMaximoException]{
+      this.flecha1.apilar(flecha6, this.personaje.inventario)
+    }
+  }
 
 }

@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga.Pilas
 
-import LlevoDemasiadaCarga.{Apilable, Personaje}
+import LlevoDemasiadaCarga.{Apilable, Inventario, Personaje}
 
 class NoApilado extends EstadoDeApilamiento {
 
@@ -8,11 +8,12 @@ class NoApilado extends EstadoDeApilamiento {
     pila.usarAux(personaje)
   }
 
-  override def apilar(pila: Apilable, itemNuevo: Apilable): Unit = {
+  override def apilar(pila: Apilable, itemNuevo: Apilable, inventario: Inventario): Unit = {
     pila.siguientePila = itemNuevo
     pila.estado = new Apilado
     itemNuevo.anteriorPila = pila
     itemNuevo.estado = new Apilado
+    inventario.tirarItem(itemNuevo)
   }
 
   override def calcularVolumen(pila: Apilable, volumenOriginal:Int): Int = {

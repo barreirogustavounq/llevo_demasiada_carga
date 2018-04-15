@@ -2,46 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9d6793-711d-467a-aa71-e7b994a2df04" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/ItemNoComerciableExeption.scala" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$83f0bd01218a3bd531bf$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$83f0bd01218a3bd531bf.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$83f0bd01218a3bd531bf.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ac7e0274b8eee696bcae$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ac7e0274b8eee696bcae.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ac7e0274b8eee696bcae.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b909b7e2c78d924a945d$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b909b7e2c78d924a945d.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b909b7e2c78d924a945d.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1cfc8d26be227cccaa2$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1cfc8d26be227cccaa2.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e1cfc8d26be227cccaa2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f6bf37282d6f047c94ee$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f6bf37282d6f047c94ee.cache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f6bf37282d6f047c94ee.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Apilable.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Apilable.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Comerciable.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Comerciable.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Inventario.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Inventario.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/ItemBasico.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/ItemBasico.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pila.scala" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestItems.scala" afterPath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestItems.scala" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestTirarYRecoger.scala" afterPath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestTirarYRecoger.scala" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte2TestComprarYVender.scala" afterPath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte2TestComprarYVender.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/Apilado.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/Apilado.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/EstadoDeApilamiento.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/EstadoDeApilamiento.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/NoApilado.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/NoApilado.scala" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala" afterPath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/LlevoDemasiadaCarga/Cinturon.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/LlevoDemasiadaCarga/Cinturon.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/LlevoDemasiadaCarga/Inventario.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/LlevoDemasiadaCarga/Inventario.class" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" />
-      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/LlevoDemasiadaCarga/Item.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/LlevoDemasiadaCarga/Item.class" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/LlevoDemasiadaCarga/Personaje.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/LlevoDemasiadaCarga/Personaje.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,14 +52,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Parte3TestApilables.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Parte3TestApilables.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="119">
+              <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="204" selection-end-column="0" />
               <folding>
                 <element signature="e#34#85#0" expanded="true" />
+                <element signature="e#444#653#0" expanded="false" />
+                <element signature="e#769#978#0" expanded="false" />
+                <element signature="e#1466#1591#0" expanded="false" />
+                <element signature="e#1644#1760#0" expanded="false" />
+                <element signature="e#1829#1996#0" expanded="false" />
+                <element signature="e#2046#2209#0" expanded="false" />
+                <element signature="e#2269#2526#0" expanded="false" />
+                <element signature="e#2594#2837#0" expanded="false" />
+                <element signature="e#2880#3141#0" expanded="false" />
+                <element signature="e#3254#3513#0" expanded="false" />
+                <element signature="e#3580#3777#0" expanded="false" />
+                <element signature="e#3847#4069#0" expanded="false" />
+                <element signature="e#4180#4655#0" expanded="false" />
+                <element signature="e#4723#5188#0" expanded="false" />
+                <element signature="e#5249#5735#0" expanded="false" />
+                <element signature="e#5805#6087#0" expanded="false" />
+                <element signature="e#6128#6728#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DifenteTipoException.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/DifenteTipoException.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,8 +94,8 @@
       <file leaf-file-name="Parte2TestComprarYVender.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte2TestComprarYVender.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+            <state relative-caret-position="85">
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="52" />
               <folding>
                 <element signature="e#34#62#0" expanded="true" />
               </folding>
@@ -105,21 +103,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parte1TestTirarYRecoger.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestTirarYRecoger.scala">
+      <file leaf-file-name="Apilable.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Apilable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            <state relative-caret-position="374">
+              <caret line="23" column="86" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+              <folding>
+                <element signature="e#29#128#0" expanded="true" />
+                <element signature="e#933#1095#0" expanded="false" />
+                <element signature="e#1099#1172#0" expanded="false" />
+                <element signature="e#1176#1236#0" expanded="false" />
+                <element signature="e#1240#1326#0" expanded="false" />
+                <element signature="e#1330#1416#0" expanded="false" />
+                <element signature="e#1420#1490#0" expanded="false" />
+                <element signature="e#1494#1648#0" expanded="false" />
+                <element signature="e#1652#1754#0" expanded="false" />
+                <element signature="e#1758#1857#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cinturon.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parte1TestItems.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestItems.scala">
+      <file leaf-file-name="Slot.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Slot.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="55" selection-end-column="3" />
+            <state relative-caret-position="34">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Equipable.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipable.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -158,21 +187,24 @@
         <option value="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestTirarYRecoger.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestItems.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/PilaPrueba.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Item.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Personaje.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/Apilado.java" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Vendedor.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/EstadoDeApilamiento.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/NoApilado.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/Apilado.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Apilable.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Comerciable.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/ItemBasico.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Inventario.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte2TestComprarYVender.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pila.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/ItemBasico.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/NoApilado.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/EstadoDeApilamiento.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/Apilado.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/ItemNoAdmitidoEnCinturonException.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/CantidadDeApilablesAlMaximo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Apilable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/DifenteTipoException.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala" />
       </list>
     </option>
   </component>
@@ -198,10 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,15 +268,6 @@
               <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
               <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="LlevoDemasiadaCarga" type="462c0819:PsiDirectoryNode" />
-              <item name="Pilas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -269,6 +289,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.Parte1TestItems.ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos">
+  <component name="RunManager" selected="ScalaTest.Parte3TestApilables.Apilo3FlechasYPidoLaCantidadDeItems">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -335,10 +358,10 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration name="Parte1TestItems.ElPersonajeUsaUnTomoElCualDisminuyeSuCantidadDeUsos" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="Parte3TestApilables.AgregoTresFlechasYVeoElVolumenDeLaPila" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestItems" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -348,13 +371,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestItems" />
-      <setting name="testName" value="ElPersonajeUsaUnTomoElCualDisminuyeSuCantidadDeUsos" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
+      <setting name="testName" value="AgregoTresFlechasYVeoElVolumenDeLaPila" />
     </configuration>
-    <configuration name="Parte1TestItems.ElPersonajeUsaUnUltimoTomoYSeRemueveDelInventario" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="Parte3TestApilables.Apilo3FlechasYPidoLaCantidadDeItems" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestItems" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -364,13 +387,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestItems" />
-      <setting name="testName" value="ElPersonajeUsaUnUltimoTomoYSeRemueveDelInventario" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
+      <setting name="testName" value="Apilo3FlechasYPidoLaCantidadDeItems" />
     </configuration>
-    <configuration name="Parte1TestItems.ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="Parte3TestApilables.CompraUnaPilaDe3FlechasYAlPersonajeLeBajaLaCantidadDeOro" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestItems" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -380,13 +403,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestItems" />
-      <setting name="testName" value="ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
+      <setting name="testName" value="CompraUnaPilaDe3FlechasYAlPersonajeLeBajaLaCantidadDeOro" />
     </configuration>
-    <configuration name="Parte1TestItems.ElPersonajeUsaUnaPocionDelInventarioYEstaEsRemovida" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="Parte3TestApilables.NoSePuedeApilarUnaFlechaConUnaSaeta" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestItems" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -396,13 +419,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestItems" />
-      <setting name="testName" value="ElPersonajeUsaUnaPocionDelInventarioYEstaEsRemovida" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
+      <setting name="testName" value="NoSePuedeApilarUnaFlechaConUnaSaeta" />
     </configuration>
-    <configuration name="Parte1TestTirarYRecoger.SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="Parte3TestApilables.NoSePuedenApilarMasDe5Flechas" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestTirarYRecoger" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -412,8 +435,8 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestTirarYRecoger" />
-      <setting name="testName" value="SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
+      <setting name="testName" value="NoSePuedenApilarMasDe5Flechas" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -449,19 +472,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.Parte1TestTirarYRecoger.SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.Parte1TestItems.ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.Parte1TestItems.ElPersonajeUsaUnTomoElCualDisminuyeSuCantidadDeUsos" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.Parte1TestItems.ElPersonajeUsaUnUltimoTomoYSeRemueveDelInventario" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.Parte1TestItems.ElPersonajeUsaUnaPocionDelInventarioYEstaEsRemovida" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.AgregoTresFlechasYVeoElVolumenDeLaPila" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.Apilo3FlechasYPidoLaCantidadDeItems" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.CompraUnaPilaDe3FlechasYAlPersonajeLeBajaLaCantidadDeOro" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.NoSePuedeApilarUnaFlechaConUnaSaeta" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.NoSePuedenApilarMasDe5Flechas" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.Parte1TestItems.ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.Parte1TestItems.ElPersonajeUsaUnaPocionDelInventarioYEstaEsRemovida" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.Parte1TestItems.ElPersonajeUsaUnUltimoTomoYSeRemueveDelInventario" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.Parte1TestItems.ElPersonajeUsaUnTomoElCualDisminuyeSuCantidadDeUsos" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.Parte1TestTirarYRecoger.SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.Apilo3FlechasYPidoLaCantidadDeItems" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.NoSePuedeApilarUnaFlechaConUnaSaeta" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.NoSePuedenApilarMasDe5Flechas" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.AgregoTresFlechasYVeoElVolumenDeLaPila" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables.CompraUnaPilaDe3FlechasYAlPersonajeLeBajaLaCantidadDeOro" />
       </list>
     </recent_temporary>
   </component>
@@ -517,40 +540,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Parte1TestItems_ElPersonajeUsaUnTomoElCualDisminuyeSuCantidadDeUsos - 2018.04.14 at 23h 06m 13s.xml">
-      <configuration name="Parte1TestItems.ElPersonajeUsaUnTomoElCualDisminuyeSuCantidadDeUsos" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_Apilo3FlechasYPidoLaCantidadDeItems - 2018.04.15 at 16h 22m 07s.xml">
+      <configuration name="Parte3TestApilables.Apilo3FlechasYPidoLaCantidadDeItems" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte1TestItems_ElPersonajeUsaUnUltimoTomoYSeRemueveDelInventario - 2018.04.14 at 23h 06m 18s.xml">
-      <configuration name="Parte1TestItems.ElPersonajeUsaUnUltimoTomoYSeRemueveDelInventario" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_Apilo3FlechasYPidoLaCantidadDeItems - 2018.04.15 at 16h 58m 48s.xml">
+      <configuration name="Parte3TestApilables.Apilo3FlechasYPidoLaCantidadDeItems" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte1TestItems_ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos - 2018.04.14 at 23h 06m 08s.xml">
-      <configuration name="Parte1TestItems.ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_Apilo3FlechasYPidoLaCantidadDeItems - 2018.04.15 at 17h 21m 27s.xml">
+      <configuration name="Parte3TestApilables.Apilo3FlechasYPidoLaCantidadDeItems" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte1TestItems_ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos - 2018.04.14 at 23h 07m 47s.xml">
-      <configuration name="Parte1TestItems.ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_Apilo3FlechasYPidoLaCantidadDeItems - 2018.04.15 at 17h 35m 18s.xml">
+      <configuration name="Parte3TestApilables.Apilo3FlechasYPidoLaCantidadDeItems" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte1TestItems_ElPersonajeUsaUnaPocionDelInventarioYEstaEsRemovida - 2018.04.14 at 23h 06m 21s.xml">
-      <configuration name="Parte1TestItems.ElPersonajeUsaUnaPocionDelInventarioYEstaEsRemovida" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_CompraUnaPilaDe3FlechasYAlPersonajeLeBajaLaCantidadDeOro - 2018.04.15 at 15h 44m 38s.xml">
+      <configuration name="Parte3TestApilables.CompraUnaPilaDe3FlechasYAlPersonajeLeBajaLaCantidadDeOro" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte1TestTirarYRecoger_ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad - 2018.04.14 at 23h 05m 57s.xml">
-      <configuration name="Parte1TestTirarYRecoger.ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_NoSePuedeApilarUnaFlechaConUnaSaeta - 2018.04.15 at 17h 07m 40s.xml">
+      <configuration name="Parte3TestApilables.NoSePuedeApilarUnaFlechaConUnaSaeta" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte1TestTirarYRecoger_ElInventarioPuedeAgregarUnItem - 2018.04.14 at 23h 05m 52s.xml">
-      <configuration name="Parte1TestTirarYRecoger.ElInventarioPuedeAgregarUnItem" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_NoSePuedeApilarUnaFlechaConUnaSaeta - 2018.04.15 at 17h 13m 28s.xml">
+      <configuration name="Parte3TestApilables.NoSePuedeApilarUnaFlechaConUnaSaeta" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte1TestTirarYRecoger_SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado - 2018.04.14 at 23h 06m 01s.xml">
-      <configuration name="Parte1TestTirarYRecoger.SeTiraUnItemDeUnInventarioCon1SoloItemYQuedaVacioConElEspacioLiberado" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_NoSePuedenApilarMasDe5Flechas - 2018.04.15 at 17h 17m 12s.xml">
+      <configuration name="Parte3TestApilables.NoSePuedenApilarMasDe5Flechas" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte2TestComprarYVender_ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeOroYLoInformeEnPantalla - 2018.04.14 at 23h 05m 42s.xml">
-      <configuration name="Parte2TestComprarYVender.ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeOroYLoInformeEnPantalla" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_NoSePuedenApilarMasDe5Flechas - 2018.04.15 at 17h 18m 12s.xml">
+      <configuration name="Parte3TestApilables.NoSePuedenApilarMasDe5Flechas" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte2TestComprarYVender_VenderUnArcoAlVendedor - 2018.04.14 at 23h 04m 50s.xml">
-      <configuration name="Parte2TestComprarYVender.VenderUnArcoAlVendedor" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte3TestApilables_NoSePuedenApilarMasDe5Flechas - 2018.04.15 at 17h 19m 51s.xml">
+      <configuration name="Parte3TestApilables.NoSePuedenApilarMasDe5Flechas" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -572,13 +594,12 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960468" sideWeight="0.49172577" order="7" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18960468" sideWeight="0.50827426" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -587,6 +608,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20919175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -622,41 +644,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/EfectoVidaMaxima.scala" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Consumible.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.5-sources.jar!/scala/collection/IndexedSeqOptimized.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3739">
-          <caret line="44" column="6" lean-forward="false" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/EfectoVidaMaxima.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Llave.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/OjoDeAnok.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Tomos/TomoDeIdentificacion.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Tomos/TomoDePortal.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Estados/EstadosDeUso/EstadoDeUsoNoDisponible.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Estados/EstadosDeUso/EstadoDeUsoDisponible.scala" />
@@ -674,19 +661,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/PilaPrueba.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.5-sources.jar!/org/scalactic/source/Position.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -748,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,56 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Vendedor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/EstadoDeApilamiento.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/Apilado.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="61" column="80" lean-forward="false" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
-          <folding>
-            <element signature="e#132#488#0" expanded="false" />
-            <element signature="e#492#771#0" expanded="false" />
-            <element signature="e#775#1002#0" expanded="false" />
-            <element signature="e#1006#1282#0" expanded="false" />
-            <element signature="e#1286#1525#0" expanded="false" />
-            <element signature="e#1529#1764#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/NoApilado.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="e#134#229#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Apilable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,15 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/ItemBasico.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,86 +775,215 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/TipoDeItem.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Usable.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pila.scala" />
+    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestItems.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Inventario.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/TipoDeItem.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/NoApilado.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="238">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#146#241#0" expanded="false" />
+            <element signature="e#245#509#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/ItemBasico.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Usable.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Vendedor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="200">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/EstadoDeApilamiento.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/Apilado.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="42" column="53" lean-forward="false" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+          <folding>
+            <element signature="e#144#500#0" expanded="false" />
+            <element signature="e#504#857#0" expanded="false" />
+            <element signature="e#861#1088#0" expanded="false" />
+            <element signature="e#1092#1368#0" expanded="false" />
+            <element signature="e#1372#1611#0" expanded="false" />
+            <element signature="e#1615#1850#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Personaje.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding>
-            <element signature="e#954#1141#0" expanded="false" />
-            <element signature="e#1145#1337#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Inventario.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="289">
+          <caret line="17" column="76" lean-forward="false" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte2TestComprarYVender.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/InsuficienteOroException.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/CantidadDeApilablesAlMaximoException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="122" lean-forward="false" selection-start-line="3" selection-start-column="122" selection-end-line="3" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/ItemNoComerciableExeption.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/ItemNoAdmitidoEnCinturonException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="129" lean-forward="true" selection-start-line="3" selection-start-column="80" selection-end-line="3" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/InsuficienteEspacioException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="82" lean-forward="false" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Apilable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="86" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
           <folding>
-            <element signature="e#34#62#0" expanded="true" />
+            <element signature="e#29#128#0" expanded="true" />
+            <element signature="e#933#1095#0" expanded="false" />
+            <element signature="e#1099#1172#0" expanded="false" />
+            <element signature="e#1176#1236#0" expanded="false" />
+            <element signature="e#1240#1326#0" expanded="false" />
+            <element signature="e#1330#1416#0" expanded="false" />
+            <element signature="e#1420#1490#0" expanded="false" />
+            <element signature="e#1494#1648#0" expanded="false" />
+            <element signature="e#1652#1754#0" expanded="false" />
+            <element signature="e#1758#1857#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestTirarYRecoger.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="204">
           <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestUsarYMover.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte2TestComprarYVender.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="52" />
+          <folding>
+            <element signature="e#34#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Slot.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/DifenteTipoException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="119">
+          <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="204" selection-end-column="0" />
           <folding>
             <element signature="e#34#85#0" expanded="true" />
+            <element signature="e#444#653#0" expanded="false" />
+            <element signature="e#769#978#0" expanded="false" />
+            <element signature="e#1466#1591#0" expanded="false" />
+            <element signature="e#1644#1760#0" expanded="false" />
+            <element signature="e#1829#1996#0" expanded="false" />
+            <element signature="e#2046#2209#0" expanded="false" />
+            <element signature="e#2269#2526#0" expanded="false" />
+            <element signature="e#2594#2837#0" expanded="false" />
+            <element signature="e#2880#3141#0" expanded="false" />
+            <element signature="e#3254#3513#0" expanded="false" />
+            <element signature="e#3580#3777#0" expanded="false" />
+            <element signature="e#3847#4069#0" expanded="false" />
+            <element signature="e#4180#4655#0" expanded="false" />
+            <element signature="e#4723#5188#0" expanded="false" />
+            <element signature="e#5249#5735#0" expanded="false" />
+            <element signature="e#5805#6087#0" expanded="false" />
+            <element signature="e#6128#6728#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pila.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestItems.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="55" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>

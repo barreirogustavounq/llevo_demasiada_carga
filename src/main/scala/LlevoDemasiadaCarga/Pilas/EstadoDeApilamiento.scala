@@ -1,11 +1,11 @@
 package LlevoDemasiadaCarga.Pilas
 
-import LlevoDemasiadaCarga.{Apilable, ItemBasico, Personaje}
+import LlevoDemasiadaCarga.{Apilable, Inventario, Personaje}
 
 abstract class EstadoDeApilamiento {
 
   def usar(pila:Apilable, personaje: Personaje):Unit
-  def apilar(pila:Apilable, itemNuevo:Apilable):Unit
+  def apilar(pila:Apilable, itemNuevo:Apilable, inventario: Inventario):Unit
   def calcularVolumen(pila: Apilable, volumenOriginal:Int):Int
   def desapilar(pila:Apilable):Apilable
   def calcularPrecioCompra(apilable: Apilable, precioCompra:Int):Int
