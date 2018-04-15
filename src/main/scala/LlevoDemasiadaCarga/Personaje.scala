@@ -17,13 +17,13 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
 
   def vender(item: Comerciable, vendedor: Vendedor): Unit = { vendedor.comprar(item, this) }
 
-  def recogerItem(item : Item){ inventario.recogerItem(item) }
+  def recogerItem(item : ItemBasico){ inventario.recogerItem(item) }
 
-  def tirarItem(item : Item) {inventario.tirarItem(item)}
+  def tirarItem(item : ItemBasico) {inventario.tirarItem(item)}
 
   def usarItem(item : Item) { item.usar(this)}
 
-  def moverItemDeInventarioAlCinturon(pocion: Pocion): Unit = {
+  def moverItemDeInventarioAlCinturon(pocion: ItemBasico): Unit = {
     if(cinturon.puedoAgregar(pocion))
     {
       cinturon.agregarPocion(pocion)
@@ -34,11 +34,9 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
   def moverAlInventario(pocion: Pocion): Unit ={
     if(this.inventario.puedoAgregar(pocion.volumen)){
       this.inventario.recogerItem(pocion)
-      this.cinturon.tienePocion(pocion)
+      this.cinturon.tirarPocion(pocion)
     }
   }
 
-  def tieneItem(item:ItemBasico): Boolean={
-    return this.inventario.tieneItem(item)
-  }
+  def tieneItem(item:ItemBasico): Boolean = this.inventario.tieneItem(item)
 }

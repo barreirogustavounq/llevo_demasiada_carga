@@ -16,9 +16,9 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
   val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
   val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 0, cinturon)
 
-  val flecha1: Flecha = new Flecha
-  val flecha2: Flecha = new Flecha
-  val flecha3: Flecha = new Flecha
+  var flecha1: Flecha = new Flecha
+  var flecha2: Flecha = new Flecha
+  var flecha3: Flecha = new Flecha
 
   var inventarioVendedor: Inventario = new Inventario(20)
   var vendedor: Vendedor = new Vendedor(inventarioVendedor)
@@ -28,6 +28,14 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
     this.personaje.recogerItem(flecha1)
     this.personaje.recogerItem(flecha2)
     this.personaje.recogerItem(flecha3)
+  }
+
+  // Reset de referencias entre las pilas.
+  after {
+    flecha1 = new Flecha
+    flecha2 = new Flecha
+    flecha3 = new Flecha
+    this.personaje.vidaActual = 100
   }
 
 /*CASOS POSITIVOS */

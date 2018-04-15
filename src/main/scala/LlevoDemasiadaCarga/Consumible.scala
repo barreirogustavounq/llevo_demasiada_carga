@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga
 
-trait Consumible extends Item{
+trait Consumible extends ItemBasico {
 
   var cantidadDeUsos: Int
 

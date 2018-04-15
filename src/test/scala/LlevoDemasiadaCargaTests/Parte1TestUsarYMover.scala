@@ -1,9 +1,10 @@
 package LlevoDemasiadaCargaTests
 
+import LlevoDemasiadaCarga.Excepciones.ItemNoAdmitidoEnCinturonException
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
-class Parte1TestItems extends FunSuite with BeforeAndAfter {
+class Parte1TestUsarYMover extends FunSuite with BeforeAndAfter {
 
   // SETUP
   val inventario:Inventario = new Inventario(10)
@@ -27,7 +28,6 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
 
   /* Un Personaje usa un Item y ocurre un Efecto en el Personaje. */
   test("ElPersonajeUsaUnaPocionDeSaludYSeCuraCincoPuntos") {
-    this.personaje.recogerItem(this.pocionDeVida)
     this.personaje.vidaActual = 90
     this.personaje.usarItem(pocionDeVida)
     assert(this.personaje.vidaActual.equals(95))
@@ -56,10 +56,30 @@ class Parte1TestItems extends FunSuite with BeforeAndAfter {
   }
 
 
-  // Se mueve una Pocion del Inventario al Cinturon.
+  // Se mueve una Pocion del Inventario al Cinturon,
+  // liberando el espacio del Inventario y ocupando el del Cinturon.
+  test("ElPersonajeEquipaUnaPocionAlCinturon") {
+    this.personaje.moverItemDeInventarioAlCinturon(pocionDeVida)
+    assert(!this.inventario.tieneItem(pocionDeVida))
+    assert(this.inventario.volumenDisponible().equals(10))
+    assert(this.cinturon.tienePocion(pocionDeVida))
+    assert(this.cinturon.pociones.size.equals(1))
+  }
 
   // Se mueve una Pocion del Cinturon al Inventario.
+  test("ElPersonajeMueveUnaPocionDelCinturonAlInventario") {
+    this.personaje.moverItemDeInventarioAlCinturon(pocionDeVida)
+    this.personaje.moverAlInventario(pocionDeVida)
+    assert(this.inventario.tieneItem(pocionDeVida))
+    assert(this.inventario.volumenDisponible().equals(9))
+    assert(!this.cinturon.tienePocion(pocionDeVida))
+    assert(this.cinturon.pociones.isEmpty)
+  }
 
-  // Se intenta mover un Item que no es una Pocion al Cinturon, y no puede.
+  // Se intenta mover un Item que no es una Pocion al Cinturon, y levanta una excepsion.
+  test("ElPersonajeMueveUnTomoAlCinturonYNoPuede") {
+    this.personaje.recogerItem(tomo)
+    assertThrows[ItemNoAdmitidoEnCinturonException](this.personaje.moverItemDeInventarioAlCinturon(tomo))
+  }
 
 }

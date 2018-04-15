@@ -3,16 +3,16 @@ import LlevoDemasiadaCarga.Excepciones.InsuficienteEspacioException, scala.colle
 
 class Inventario(val capacidadMaxima: Int) {
 
-  var items: mutable.Set[Item] = mutable.Set()
+  var items: mutable.Set[ItemBasico] = mutable.Set()
 
-  def recogerItem(item: Item): Unit = {
+  def recogerItem(item: ItemBasico): Unit = {
     if (puedoAgregar(item.volumen)) {
       this.items += item
     }
     else throw InsuficienteEspacioException()
   }
 
-  def tirarItem(item: Item): Unit = {
+  def tirarItem(item: ItemBasico): Unit = {
     if (this.tieneItem(item)) {
       this.items -= item
     }
@@ -22,7 +22,7 @@ class Inventario(val capacidadMaxima: Int) {
     this.volumenDisponible() >= volumenDelItem
   }
 
-  def tieneItem(item: Item): Boolean = {
+  def tieneItem(item: ItemBasico): Boolean = {
     this.items.contains(item)
   }
 
