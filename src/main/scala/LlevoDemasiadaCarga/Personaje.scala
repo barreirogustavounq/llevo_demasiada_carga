@@ -80,4 +80,20 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
       }
     }
   }
+  def desequiparItem(slot : Slot): Unit =
+  {
+    if(slot.estaEquipado())
+    {
+    inventario.recogerItem(slot.itemEqiupado)
+    tirarItemEquipado(slot)
+    }
+  }
+
+  def tirarItemEquipado(slot : Slot): Unit =
+  {
+    if(slot.estaEquipado())
+      {
+        slot.desequiparItem()
+      }
+  }
 }
