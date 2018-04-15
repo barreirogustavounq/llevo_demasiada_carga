@@ -1,0 +1,6 @@
+package LlevoDemasiadaCarga
+
+class Efecto
+{
+
+}

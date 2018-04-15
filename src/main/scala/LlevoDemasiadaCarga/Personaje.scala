@@ -1,6 +1,10 @@
 package LlevoDemasiadaCarga
 
+import scala.collection.mutable
+
 class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var ataque:Int, val inventario: Inventario, var oro: Int, val cinturon: Cinturon) {
+  var estatus : mutable.Set[Atributo] = mutable.Set()
+  var slotsEquipables : mutable.Set[Slot] = mutable.Set()
 
   var vidaActual: Int = vidaMaxima
 
@@ -39,4 +43,41 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
   }
 
   def tieneItem(item:ItemBasico): Boolean = this.inventario.tieneItem(item)
+
+  def puedeEquiparItem(item: ItemBasico with Equipable): Boolean =
+  {
+    var contador : Int = 0
+    for( r <- item.requerimientos)
+     {
+       if(estatus.filter(_.eq(r.nombre)).head.cantidad >= r.cantidad){ contador + 1}
+     }
+    contador == item.requerimientos.size
+  }
+  def equiparITemEnSlot(item : ItemBasico with Equipable, slot : Slot)
+  {
+    slot.equiparItem(item)
+    inventario.tirarItem(item)
+  }
+
+  def equiparItem(item : ItemBasico with Equipable): Unit =
+  {
+    if(puedeEquiparItem(item))
+    {
+      for(s <- slotsEquipables)
+      {
+        if(s.lugar == item.lugarDondeSeEquipa)
+        {
+          if(s.estaEquipado())
+          {
+            inventario.recogerItem(s.itemEqiupado)
+            equiparITemEnSlot(item, s)
+          }
+          else
+          {
+            equiparITemEnSlot(item, s)
+          }
+        }
+      }
+    }
+  }
 }
