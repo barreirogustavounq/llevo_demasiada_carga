@@ -1,17 +1,17 @@
 package LlevoDemasiadaCarga
 
-import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DifenteTipoException}
+import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DiferenteTipoException}
 import LlevoDemasiadaCarga.Pilas.{EstadoDeApilamiento, NoApilado}
 
 trait Apilable extends ItemBasico
 {
   var estado:EstadoDeApilamiento = new NoApilado
-  var siguientePila:Apilable = null
-  var anteriorPila:Apilable = null
+  var siguientePila:Apilable = _
+  var anteriorPila:Apilable = _
   val volumenOriginal:Int = volumen
   var cantidadMaximaApilables:Int
   volumen = this.calcularVolumen()
-  var miClase = this.getClass
+  var miClase: Class[_ <: Apilable] = this.getClass
 
   def apilar(itemApilable: Apilable, inventario: Inventario): Unit={
     this.puedoApilar()
@@ -21,27 +21,21 @@ trait Apilable extends ItemBasico
 
   def puedoApilar():Unit = if (!(this.cantidadDeApilables() < this.cantidadMaximaApilables)) throw CantidadDeApilablesAlMaximoException()
 
-  def esMismoTipo(apilable: Apilable):Unit= if (!(apilable.getClass == this.getClass)) throw DifenteTipoException()
+  def esMismoTipo(apilable: Apilable):Unit= if (!(apilable.getClass == this.getClass)) throw DiferenteTipoException()
 
-  def cantidadDeApilables():Int={
+  def cantidadDeApilables(): Int = {
     var cant = 1
     if(existeSiguiente()){
       cant = cant + this.siguientePila.cantidadDeApilables()
     }
-    return cant
+    cant
   }
 
-  def existeSiguiente():Boolean={
-    return this.siguientePila != null
-  }
+  def existeSiguiente(): Boolean = this.siguientePila != null
 
-  def siguiente():Apilable={
-    return this.siguientePila
-  }
+  def siguiente(): Apilable = this.siguientePila
 
-  def calcularVolumen():Int={
-    estado.calcularVolumen(this, this.volumenOriginal)
-  }
+  def calcularVolumen(): Int = estado.calcularVolumen(this, this.volumenOriginal)
 
   override def usar(personaje: Personaje): Unit = {
     estado.usar(this, personaje)
@@ -53,7 +47,7 @@ trait Apilable extends ItemBasico
 
   def desapilar(): Apilable ={
     // El item desapilado se cae del inventario para que se pueda volver a recoger
-    return this.estado.desapilar(this)
+    this.estado.desapilar(this)
   }
 
   override def calcularPrecioCompra():Int={

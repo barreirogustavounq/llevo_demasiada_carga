@@ -42,7 +42,7 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
     }
   }
 
-  def tieneItem(item:ItemBasico): Boolean = this.inventario.tieneItem(item)
+  def tieneItemEnInventario(item:ItemBasico): Boolean = this.inventario.tieneItem(item)
 
   def puedeEquiparItem(item: ItemBasico with Equipable): Boolean =
   {
@@ -53,39 +53,33 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
      }
     contador == item.requerimientos.size
   }
-  def equiparITemEnSlot(item : ItemBasico with Equipable, slot : Slot)
-  {
-    slot.equiparItem(item)
+
+  def equiparITemEnSlot(item : ItemBasico with Equipable, slot : Slot): Unit = {
     inventario.tirarItem(item)
+    slot.equiparItem(item)
+    item.aplicarEfectos(this)
   }
 
   def equiparItem(item : ItemBasico with Equipable): Unit =
   {
-    if(puedeEquiparItem(item))
-    {
-      for(s <- slotsEquipables)
-      {
-        if(s.lugar == item.lugarDondeSeEquipa)
-        {
-          if(s.estaEquipado())
-          {
-            inventario.recogerItem(s.itemEqiupado)
+    if(puedeEquiparItem(item)) {
+      for(s <- slotsEquipables) {
+        if(s.lugar == item.lugarDondeSeEquipa) {
+          if(s.estaEquipado()) {
+            inventario.recogerItem(s.itemEquipado)
             equiparITemEnSlot(item, s)
           }
-          else
-          {
-            equiparITemEnSlot(item, s)
-          }
+          else { equiparITemEnSlot(item, s) }
         }
       }
     }
   }
-  def desequiparItem(slot : Slot): Unit =
-  {
-    if(slot.estaEquipado())
-    {
-    inventario.recogerItem(slot.itemEqiupado)
-    tirarItemEquipado(slot)
+
+  def desequiparItem(slot : Slot): Unit = {
+    if(slot.estaEquipado()) {
+      // ToDo: Pendiente. Retirar efectos del item.
+      inventario.recogerItem(slot.itemEquipado)
+      tirarItemEquipado(slot)
     }
   }
 

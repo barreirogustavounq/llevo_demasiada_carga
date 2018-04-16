@@ -1,16 +1,11 @@
 package LlevoDemasiadaCarga
 
-class Slot (val lugar : String, var  itemEqiupado : ItemBasico with  Equipable)
-{
-  def desequiparItem(): Unit =
-  {
-    var itemEquipado = null
-  }
+class Slot (val lugar: String, var itemEquipado: ItemBasico with Equipable) {
 
-  def equiparItem(item: ItemBasico with Equipable) : Unit =
-  {
-    var itemEquipado = item
-  }
-  def estaEquipado() : Boolean =  itemEqiupado != null
+  def desequiparItem(): Unit = itemEquipado = null
+
+  def equiparItem(item: ItemBasico with Equipable) : Unit = itemEquipado = item
+
+  def estaEquipado() : Boolean =  itemEquipado != null
 
 }

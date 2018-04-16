@@ -10,7 +10,7 @@ class Apilado extends EstadoDeApilamiento {
     }
     else {
       pila.usarAux(personaje)
-      if(!personaje.tieneItem(pila)){
+      if(!personaje.tieneItemEnInventario(pila)){
         pila.anteriorPila.siguientePila = null
         pila.anteriorPila = null
         pila.estado = new NoApilado
@@ -37,7 +37,7 @@ class Apilado extends EstadoDeApilamiento {
     if(pila.existeSiguiente()){
       cont = cont + pila.siguiente().calcularVolumen()
     }
-    return cont
+    cont
   }
 
   override def desapilar(pila: Apilable): Apilable = {
@@ -48,7 +48,7 @@ class Apilado extends EstadoDeApilamiento {
       pila.anteriorPila.siguientePila = null
       pila.anteriorPila = null
       pila.estado = new NoApilado
-      return pila
+      pila
     }
   }
 
@@ -57,7 +57,7 @@ class Apilado extends EstadoDeApilamiento {
     if(apilable.existeSiguiente()){
       cont = cont + apilable.siguiente().calcularPrecioCompra()
     }
-    return cont
+    cont
   }
 
   override def calcularPrecioVenta(apilable: Apilable, precioVenta: Int): Int = {
@@ -65,6 +65,6 @@ class Apilado extends EstadoDeApilamiento {
     if(apilable.existeSiguiente()){
       cont = cont + apilable.siguiente().calcularPrecioVenta()
     }
-    return cont
+    cont
   }
 }
