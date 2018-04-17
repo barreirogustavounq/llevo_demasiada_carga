@@ -1,5 +1,7 @@
 package LlevoDemasiadaCarga.Equipables.TiposDeEquipables
 
-trait ManoIzquierda {
+import LlevoDemasiadaCarga.ItemBasico
+
+trait ManoIzquierda extends ItemBasico{
 
 }

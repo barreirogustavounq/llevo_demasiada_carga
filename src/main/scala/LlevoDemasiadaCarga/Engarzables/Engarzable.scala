@@ -23,13 +23,13 @@ trait Engarzable extends Equipable{
 
   def puedeEngarzar():Unit= if(this.engarzes.size == cantidadEngarzes) throw CantidadDeEngarzesAlMaximo()
 
-  def equipar(personaje: Personaje):Unit={
+  override def equipar(personaje: Personaje):Unit={
     this.engarzes.foreach(e => e.aplicar(personaje))
-    /* super.equipar(personaje) -----TIENE QUE ESTAR IMPLEMENTADO EN EQUIPABLE Y SE ACCIONA CUANDO SE EQUIPA UN ITEM -----*/
+    super.equipar(personaje)
   }
 
-  def desequipar(personaje: Personaje):Unit={
+  override def desequipar(personaje: Personaje):Unit={
     this.engarzes.foreach(e => e.deshacer(personaje))
-    /* super.desequipar(personaje) -----TIENE QUE ESTAR IMPLEMENTADO EN EQUIPABLE Y SE ACCIONA CUANDO SE DESEQUIPA UN ITEM -----*/
+    super.desequipar(personaje)
   }
 }

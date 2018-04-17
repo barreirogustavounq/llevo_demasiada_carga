@@ -1,5 +1,7 @@
 package LlevoDemasiadaCarga.Equipables.TiposDeEquipables
 
-trait Guantes {
+import LlevoDemasiadaCarga.ItemBasico
+
+trait Guantes extends ItemBasico{
 
 }

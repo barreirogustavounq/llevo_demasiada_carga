@@ -1,5 +1,7 @@
 package LlevoDemasiadaCarga.Equipables.TiposDeEquipables
 
-trait Amuleto {
+import LlevoDemasiadaCarga.ItemBasico
+
+trait Amuleto extends ItemBasico{
 
 }

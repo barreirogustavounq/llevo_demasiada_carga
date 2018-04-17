@@ -1,5 +1,7 @@
 package LlevoDemasiadaCarga.Equipables.TiposDeEquipables
 
-trait Cinturon {
+import LlevoDemasiadaCarga.ItemBasico
+
+trait Cinturon extends ItemBasico{
 
 }

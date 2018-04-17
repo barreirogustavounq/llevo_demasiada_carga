@@ -1,15 +1,13 @@
 package LlevoDemasiadaCarga
 
-import LlevoDemasiadaCarga.Efectos.Efecto
 import LlevoDemasiadaCarga.Equipables.Equipable
 import LlevoDemasiadaCarga.Excepciones.ItemNoAdmitidoEnCinturonException
 
 import scala.collection.mutable
 
 class Cinturon(var nombreCinturon: String , var capacidadCinturon:Int)
-  extends ItemBasico(nombreCinturon , capacidadCinturon) with Equipable {
+  extends ItemBasico(nombreCinturon , capacidadCinturon) with Equipable{
 
-  override val lugarDondeSeEquipa: String = "Cintura"
   var pociones : mutable.Set[ItemBasico] = mutable.Set()
 
   def agregarPocion(item: ItemBasico): Unit = if (puedoAgregar(item)) pociones.add(item)

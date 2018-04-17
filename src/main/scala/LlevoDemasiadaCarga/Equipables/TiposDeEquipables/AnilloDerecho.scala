@@ -1,5 +1,7 @@
 package LlevoDemasiadaCarga.Equipables.TiposDeEquipables
 
-trait AnilloDerecho {
+import LlevoDemasiadaCarga.ItemBasico
+
+trait AnilloDerecho extends ItemBasico{
 
 }

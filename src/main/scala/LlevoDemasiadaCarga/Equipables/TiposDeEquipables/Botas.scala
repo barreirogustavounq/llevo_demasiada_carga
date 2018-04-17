@@ -1,5 +1,7 @@
 package LlevoDemasiadaCarga.Equipables.TiposDeEquipables
 
-trait Botas {
+import LlevoDemasiadaCarga.ItemBasico
+
+trait Botas extends ItemBasico{
 
 }
