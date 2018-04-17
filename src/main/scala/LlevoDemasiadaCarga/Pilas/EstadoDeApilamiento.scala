@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga.Pilas
 
-import LlevoDemasiadaCarga.{Apilable, Inventario, Personaje}
+import LlevoDemasiadaCarga.{Inventario, Personaje}
 
 abstract class EstadoDeApilamiento {
 

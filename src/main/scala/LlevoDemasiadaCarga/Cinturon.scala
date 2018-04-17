@@ -1,6 +1,7 @@
 package LlevoDemasiadaCarga
 
 import LlevoDemasiadaCarga.Efectos.Efecto
+import LlevoDemasiadaCarga.Equipables.Equipable
 import LlevoDemasiadaCarga.Excepciones.ItemNoAdmitidoEnCinturonException
 
 import scala.collection.mutable

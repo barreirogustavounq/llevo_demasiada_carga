@@ -5,9 +5,9 @@ import LlevoDemasiadaCarga.Excepciones.{AtributoNoEncontradoException, NoCumpleR
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
-import scala.collection.mutable
+import scala.collection.mutable // SACAR TODA LA IMPLEMENTACION DE ATRIBUTOS
 
-class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
+/*class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
 
   // Setup Personaje
   val inventario:Inventario = new Inventario(24)
@@ -105,4 +105,4 @@ class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
   test("AlTirarUnCascoEquipadoSeDeshacenSusEfectos") {}
 
 
-}
+}*/

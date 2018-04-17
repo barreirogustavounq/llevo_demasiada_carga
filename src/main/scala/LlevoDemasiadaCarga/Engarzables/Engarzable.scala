@@ -1,7 +1,8 @@
 package LlevoDemasiadaCarga.Engarzables
 
+import LlevoDemasiadaCarga.Equipables.Equipable
 import LlevoDemasiadaCarga.Excepciones.CantidadDeEngarzesAlMaximo
-import LlevoDemasiadaCarga.{Equipable, ItemBasico, Personaje}
+import LlevoDemasiadaCarga.{ItemBasico, Personaje}
 
 import scala.collection.mutable
 

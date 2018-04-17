@@ -1,11 +1,13 @@
 package LlevoDemasiadaCarga
 
+import LlevoDemasiadaCarga.Equipables.{Equipable, Slot}
+
 import scala.collection.mutable
 
 class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var ataque:Int, val inventario: Inventario, var oro: Int, val cinturon: Cinturon) {
-  var estatus : mutable.Set[Atributo] = mutable.Set()
+  var status : Status = new Status()
   var slotsEquipables : mutable.Set[Slot] = mutable.Set()
-
+  var equipo:Equipo = new Equipo(this)
   var vidaActual: Int = vidaMaxima
 
   def puedeComprarPorElMontoDe(unMonto: Int): Boolean = { oro >= unMonto }
@@ -44,50 +46,15 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
 
   def tieneItemEnInventario(item:ItemBasico): Boolean = this.inventario.tieneItem(item)
 
-  def puedeEquiparItem(item: ItemBasico with Equipable): Boolean =
-  {
-    var contador : Int = 0
-    for( r <- item.requerimientos)
-     {
-       if(estatus.filter(_.eq(r.nombre)).head.cantidad >= r.cantidad){ contador + 1}
-     }
-    contador == item.requerimientos.size
+  def equiparItem(item : ItemBasico with Equipable): Unit = {
+    this.equipo.equiparItem(item)
   }
 
-  def equiparITemEnSlot(item : ItemBasico with Equipable, slot : Slot): Unit = {
-    inventario.tirarItem(item)
-    slot.equiparItem(item)
-    item.aplicarEfectos(this)
+  def desequiparItem(item: ItemBasico with Equipable): Unit = {
+    this.equipo.desequiparItem(item)
   }
 
-  def equiparItem(item : ItemBasico with Equipable): Unit =
-  {
-    if(puedeEquiparItem(item)) {
-      for(s <- slotsEquipables) {
-        if(s.lugar == item.lugarDondeSeEquipa) {
-          if(s.estaEquipado()) {
-            inventario.recogerItem(s.itemEquipado)
-            equiparITemEnSlot(item, s)
-          }
-          else { equiparITemEnSlot(item, s) }
-        }
-      }
-    }
-  }
-
-  def desequiparItem(slot : Slot): Unit = {
-    if(slot.estaEquipado()) {
-      // ToDo: Pendiente. Retirar efectos del item.
-      inventario.recogerItem(slot.itemEquipado)
-      tirarItemEquipado(slot)
-    }
-  }
-
-  def tirarItemEquipado(slot : Slot): Unit =
-  {
-    if(slot.estaEquipado())
-      {
-        slot.desequiparItem()
-      }
+  def tirarItemEquipado(item: ItemBasico with Equipable): Unit ={
+    this.equipo.tirarItemEquipado(item)
   }
 }

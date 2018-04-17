@@ -2,6 +2,7 @@ package LlevoDemasiadaCargaTests
 
 import LlevoDemasiadaCarga.Efectos.EfectoVidaActual
 import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DiferenteTipoException}
+import LlevoDemasiadaCarga.Pilas.Apilable
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 

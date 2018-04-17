@@ -1,7 +1,7 @@
-package LlevoDemasiadaCarga
+package LlevoDemasiadaCarga.Pilas
 
 import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DiferenteTipoException}
-import LlevoDemasiadaCarga.Pilas.{EstadoDeApilamiento, NoApilado}
+import LlevoDemasiadaCarga.{Inventario, ItemBasico, Personaje}
 
 trait Apilable extends ItemBasico
 {
