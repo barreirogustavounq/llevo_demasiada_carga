@@ -4,7 +4,7 @@ import LlevoDemasiadaCarga.Equipables.Equipable
 import LlevoDemasiadaCarga.Personaje
 
 trait EfectoAumentoEvasion extends Equipable{
-  var aumentoEvasion:Int
+  var aumentoEvasion : Int
 
   override def equipar(personaje: Personaje): Unit = {
     personaje.status.evasion += this.aumentoEvasion
@@ -15,5 +15,4 @@ trait EfectoAumentoEvasion extends Equipable{
     personaje.status.evasion -= this.aumentoEvasion
     super.desequipar(personaje)
   }
-
 }

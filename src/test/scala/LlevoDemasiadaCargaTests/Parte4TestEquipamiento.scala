@@ -36,8 +36,7 @@ class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
     this.personaje.desequiparItem(cascoVikingo2)
     this.personaje.desequiparItem(armaduraCuero)
     this.personaje.desequiparItem(espadaCorta)
-    this.personaje.status.agilidad = 0
-    this.personaje.status.fuerza = 0
+
   }
 
 
@@ -137,11 +136,7 @@ class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
 
         assertThrows[NoSePuedeEquiparException]{this.personaje.equiparItem(this.cascoVikingo1)}
      assert(!(this.personaje.equipo.casco.itemEquipado == this.cascoVikingo1))
-     assert(!(this.personaje.tieneItemEnInventario(this.cascoVikingo2)))
+     assert(!this.personaje.tieneItemEnInventario(this.cascoVikingo2))
   }
-
-
-
-
 
 }

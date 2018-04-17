@@ -4,7 +4,7 @@ import LlevoDemasiadaCarga.Equipables.Equipable
 import LlevoDemasiadaCarga.Personaje
 
 trait EfectoAumentarSuerte extends Equipable{
-  var aumentoSuerte:Int
+  var aumentoSuerte : Int
 
   override def equipar(personaje: Personaje): Unit = {
     personaje.status.suerte += this.aumentoSuerte
