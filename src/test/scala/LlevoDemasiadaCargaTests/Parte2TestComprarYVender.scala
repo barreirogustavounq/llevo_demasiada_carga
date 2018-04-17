@@ -1,25 +1,26 @@
 package LlevoDemasiadaCargaTests
 
+import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
 class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
-    val stream = new java.io.ByteArrayOutputStream()
+  val stream = new java.io.ByteArrayOutputStream()
 
-    // Setup Personaje
-    var inventario: Inventario = new Inventario(10)
-    var cinturon: Cinturon = new Cinturon("Cinturon de Cuero", 3)
-    var personaje: Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 15, cinturon)
+  // Setup Personaje
+  var inventario: Inventario = new Inventario(10)
+  var cinturon: Cinturon = new Cinturon("Cinturon de Cuero", 3)
+  var personaje: Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 15, cinturon)
 
-    // Setup Item Comerciable
-    val arco: Comerciable = new ItemBasico("Arco Largo", 5) with Comerciable {
-        override val precioVenta: Int = 4
-        override val precioCompra: Int = 15
-      }
+  // Setup Item Comerciable
+  val arco: Comerciable = new ItemBasico("Arco Largo", 5) with Comerciable {
+    override val precioVenta: Int = 4
+    override val precioCompra: Int = 15
+  }
 
   // Setup Vendedor
-    var inventarioVendedor: Inventario = new Inventario(20)
-    var vendedor: Vendedor = new Vendedor(inventarioVendedor)
+  var inventarioVendedor: Inventario = new Inventario(20)
+  var vendedor: Vendedor = new Vendedor(inventarioVendedor)
 
   before{
     this.inventarioVendedor.recogerItem(this.arco)
@@ -71,3 +72,4 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
 
 
 }
+

@@ -1,7 +1,8 @@
-package LlevoDemasiadaCarga
+package LlevoDemasiadaCarga.Equipables.ItemsEquipables
 
 import LlevoDemasiadaCarga.Equipables.Equipable
 import LlevoDemasiadaCarga.Excepciones.ItemNoAdmitidoEnCinturonException
+import LlevoDemasiadaCarga.{ItemBasico, Personaje, Pocion}
 
 import scala.collection.mutable
 

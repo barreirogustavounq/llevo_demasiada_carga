@@ -1,5 +1,6 @@
 package LlevoDemasiadaCarga
 
+import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga.Equipables.{Equipable, Slot}
 
 import scala.collection.mutable

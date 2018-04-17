@@ -1,6 +1,7 @@
 package LlevoDemasiadaCargaTests
 
-import LlevoDemasiadaCarga.{Cinturon, Inventario, Personaje, Vendedor}
+import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
+import LlevoDemasiadaCarga.{Inventario, Personaje, Vendedor}
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
 class Parte5TestEquipamientoEngarzable extends FunSuite with BeforeAndAfter {

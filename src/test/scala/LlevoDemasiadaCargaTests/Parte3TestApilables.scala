@@ -1,6 +1,7 @@
 package LlevoDemasiadaCargaTests
 
 import LlevoDemasiadaCarga.Efectos.EfectoVidaActual
+import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DiferenteTipoException}
 import LlevoDemasiadaCarga.Pilas.Apilable
 import LlevoDemasiadaCarga._
@@ -106,7 +107,7 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
     this.flecha1.apilar(this.flecha3, this.inventario)
     assert(this.personaje.tieneItemEnInventario(flecha1))
 
-    personaje.vender(this.flecha1, vendedor)
+    this.personaje.vender(this.flecha1, vendedor)
     assert(!this.personaje.tieneItemEnInventario(this.flecha1))
   }
 

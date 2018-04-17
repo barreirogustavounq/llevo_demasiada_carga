@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga
 
-case class ItemBasico(val nombre: String,var volumen: Int) extends Item{
+class ItemBasico(val nombre: String,var volumen: Int) extends Item{
 
   val precioVenta: Int = 0
   val precioCompra: Int = 0

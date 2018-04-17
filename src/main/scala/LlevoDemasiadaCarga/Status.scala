@@ -6,7 +6,8 @@ class Status {
   var fuerza:Int = 0
   var agilidad:Int = 0
   var inteligencia:Int = 0
-
+  var suerte : Int = 0
+  var evasion : Int = 0
   var defensa:Int = 0
   var ataque:Int = 0
 }

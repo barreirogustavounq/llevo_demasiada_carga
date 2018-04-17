@@ -1,5 +1,6 @@
 package LlevoDemasiadaCargaTests
 
+import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga.Excepciones.ItemNoAdmitidoEnCinturonException
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}

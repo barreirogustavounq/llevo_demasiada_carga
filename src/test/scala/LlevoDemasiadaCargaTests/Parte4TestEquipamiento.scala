@@ -1,6 +1,6 @@
 package LlevoDemasiadaCargaTests
 
-import LlevoDemasiadaCarga.Equipables.ItemsEquipables.{ArmaduraCuero, CascoVikingo, EspadaCorta}
+import LlevoDemasiadaCarga.Equipables.ItemsEquipables.{ArmaduraCuero, CascoVikingo, Cinturon, EspadaCorta}
 import LlevoDemasiadaCarga.Excepciones.{NoCumpleRequerimientosException, NoSePuedeEquiparException}
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
@@ -29,6 +29,17 @@ class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
     this.personaje.status.agilidad = 30
     this.personaje.status.fuerza = 30
   }
+  after
+  {
+    this.personaje.inventario.tirarTodo()
+    this.personaje.desequiparItem(cascoVikingo1)
+    this.personaje.desequiparItem(cascoVikingo2)
+    this.personaje.desequiparItem(armaduraCuero)
+    this.personaje.desequiparItem(espadaCorta)
+    this.personaje.status.agilidad = 0
+    this.personaje.status.fuerza = 0
+  }
+
 
   // Casos Positivos
 
@@ -124,9 +135,9 @@ class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
     assert(this.personaje.equipo.casco.estaEquipado())
     assert(this.personaje.equipo.casco.itemEquipado == this.cascoVikingo2)
 
-    assertThrows[NoSePuedeEquiparException]{this.personaje.equiparItem(this.cascoVikingo1)}
-    assert(this.personaje.equipo.casco.itemEquipado == this.cascoVikingo1)
-    //assert(this.personaje.tieneItemEnInventario(this.cascoVikingo2))
+        assertThrows[NoSePuedeEquiparException]{this.personaje.equiparItem(this.cascoVikingo1)}
+     assert(!(this.personaje.equipo.casco.itemEquipado == this.cascoVikingo1))
+     assert(!(this.personaje.tieneItemEnInventario(this.cascoVikingo2)))
   }
 
 

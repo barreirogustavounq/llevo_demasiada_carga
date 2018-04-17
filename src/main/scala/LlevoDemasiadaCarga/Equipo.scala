@@ -1,7 +1,7 @@
 package LlevoDemasiadaCarga
 
 import LlevoDemasiadaCarga.Equipables.TiposDeEquipables._
-import LlevoDemasiadaCarga.Equipables.{Equipable, Slot}
+import LlevoDemasiadaCarga.Equipables.{Equipable, ItemsEquipables, Slot}
 import LlevoDemasiadaCarga.Excepciones.{NoSePuedeDesequiparException, NoSePuedeEquiparException}
 
 class Equipo(val personaje: Personaje){
@@ -58,7 +58,7 @@ class Equipo(val personaje: Personaje){
       case i:AnilloIzquierdo => this.equiparITemEnSlot(i, this.anilloIzquierda)
       case i:AnilloDerecho => this.equiparITemEnSlot(i, this.anilloDerecha)
       case i:Guantes => this.equiparITemEnSlot(i, this.guantes)
-      case i:Cinturon => this.equiparITemEnSlot(i, this.cinturon)
+      case i:ItemsEquipables.Cinturon => this.equiparITemEnSlot(i, this.cinturon)
       case i:Torso => this.equiparITemEnSlot(i, this.torso)
     }
     /*if(puedeEquiparItem(item)) {
@@ -84,7 +84,7 @@ class Equipo(val personaje: Personaje){
       case i:AnilloIzquierdo => this.desequiparITemEnSlot(i, this.anilloIzquierda)
       case i:AnilloDerecho => this.desequiparITemEnSlot(i, this.anilloDerecha)
       case i:Guantes => this.desequiparITemEnSlot(i, this.guantes)
-      case i:Cinturon => this.desequiparITemEnSlot(i, this.cinturon)
+      case i:ItemsEquipables.Cinturon => this.desequiparITemEnSlot(i, this.cinturon)
       case i:Torso => this.desequiparITemEnSlot(i, this.torso)
     }
 
@@ -105,7 +105,7 @@ class Equipo(val personaje: Personaje){
       case i:AnilloIzquierdo => this.tirarITemEnSlot(i, this.anilloIzquierda)
       case i:AnilloDerecho => this.tirarITemEnSlot(i, this.anilloDerecha)
       case i:Guantes => this.tirarITemEnSlot(i, this.guantes)
-      case i:Cinturon => this.tirarITemEnSlot(i, this.cinturon)
+      case i:ItemsEquipables.Cinturon => this.tirarITemEnSlot(i, this.cinturon)
       case i:Torso => this.tirarITemEnSlot(i, this.torso)
     }
   }
