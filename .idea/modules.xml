@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-2018s1-grupo06-tp1.iml" filepath="$PROJECT_DIR$/.idea/modules/root-2018s1-grupo06-tp1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root-2018s1-grupo06-tp1-build.iml" filepath="$PROJECT_DIR$/.idea/modules/root-2018s1-grupo06-tp1-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tp1.iml" filepath="$PROJECT_DIR$/.idea/modules/tp1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tp1-build.iml" filepath="$PROJECT_DIR$/.idea/modules/tp1-build.iml" />
     </modules>
   </component>
 </project>

@@ -2,13 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9d6793-711d-467a-aa71-e7b994a2df04" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tp1-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/root-2018s1-grupo06-tp1-build.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tp1.iml" afterPath="$PROJECT_DIR$/.idea/modules/root-2018s1-grupo06-tp1.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/root-2018s1-grupo06-tp1-build.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/root-2018s1-grupo06-tp1.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarSuerte.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarSuerte.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarVidaMaxima.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarVidaMaxima.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentoEvasion.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentoEvasion.scala" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte4TestEquipamiento.scala" afterPath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte4TestEquipamiento.scala" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/tp1-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/tp1-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/tp1-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/tp1-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-compile-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-compile.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-optional.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-pom.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-provided.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-runtime-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-runtime.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-scala-tool.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-test-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-test.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-tp1-build-test.xml" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarFueza.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarFueza.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Engarzable.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Engarzable.scala" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Status.scala" afterPath="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Status.scala" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte5TestEquipamientoEngarzable.scala" afterPath="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte5TestEquipamientoEngarzable.scala" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/tp1$sources/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/tp1$sources/0.1/resolved.xml.properties" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/tp1$sources/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/tp1$sources/0.1/resolved.xml.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/tp1_2.12/0.1/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/tp1_2.12/0.1/resolved.xml.properties" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/tp1_2.12/0.1/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/tp1_2.12/0.1/resolved.xml.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-compile-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-compile-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-compile.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-compile.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-optional.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-optional.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-plugin.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-pom.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-pom.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-provided.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-provided.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-runtime-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-runtime.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-runtime.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-scala-tool.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-scala-tool.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-test-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-test-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-test.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1$sources-test.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-compile-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-compile.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-compile.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-optional.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-optional.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-plugin.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-plugin.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-pom.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-pom.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-provided.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-provided.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-runtime-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-runtime.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-runtime.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-scala-tool.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-scala-tool.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-test-internal.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-test-internal.xml" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-test.xml" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-tp1_2.12-test.xml" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/$global/dumpStructure/$global/streams/out" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,94 +114,7 @@
     <favorites_list name="TP1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Parte3TestApilables.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding>
-                <element signature="e#34#85#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Equipo.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipo.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-              <folding>
-                <element signature="e#29#86#0" expanded="true" />
-                <element signature="e#653#1016#0" expanded="false" />
-                <element signature="e#1450#1734#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EfectoAumentarSuerte.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarSuerte.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EfectoAumentarVidaMaxima.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarVidaMaxima.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EfectoAumentoEvasion.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentoEvasion.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parte5TestEquipamientoEngarzable.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte5TestEquipamientoEngarzable.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parte4TestEquipamiento.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte4TestEquipamiento.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Personaje.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Personaje.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -162,21 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte5TestEquipamientoEngarzable.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Atributo.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/CantidadDeEngarzesAlMaximo.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarFueza.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarVidaMaxima.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Engarze.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Efectos/Efecto.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipamiento.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/TipoDeItem.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/AtributoNoEncontradoException.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipable.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Status.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/Slot.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/ItemNoAdmitidoEnCinturonException.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/NoSePuedeEquiparException.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/NoSePuedeDesequiparException.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Item.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarAtaque.scala" />
@@ -200,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/ItemsEquipables/ArmaduraCuero.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/ItemsEquipables/EspadaCorta.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Engarzable.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipo.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Inventario.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pilas/Apilable.scala" />
@@ -213,6 +174,22 @@
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarSuerte.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarVidaMaxima.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentoEvasion.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/Gema.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/Runa.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/Ruby.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/Ruby.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Gema.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Runa.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarMana.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Status.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/Esmeralda.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/RunaMO.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/RunaRO.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/ItemsEquipables/ArmaduraEngarzable.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarFueza.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosExtras.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Engarzable.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte5TestEquipamientoEngarzable.scala" />
       </list>
     </option>
   </component>
@@ -241,74 +218,66 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="LlevoDemasiadaCarga" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="LlevoDemasiadaCarga" type="462c0819:PsiDirectoryNode" />
-              <item name="Equipables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="LlevoDemasiadaCarga" type="462c0819:PsiDirectoryNode" />
-              <item name="Equipables" type="462c0819:PsiDirectoryNode" />
-              <item name="EfectosDeEquipables" type="462c0819:PsiDirectoryNode" />
+              <item name="Engarzables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2018s1-grupo06-TP1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018s1-grupo06-TP1" type="462c0819:PsiDirectoryNode" />
+              <item name="TP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
@@ -319,12 +288,10 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.sbt" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -338,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.Parte4TestEquipamiento">
+  <component name="RunManager" selected="ScalaTest.Parte5TestEquipamientoEngarzable.SeDesequipaItemsConRunasYEfectosExtrasYSeBajanLosStatsDelPersonaje">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -380,6 +347,18 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="root-2018s1-grupo06-tp1-build" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -387,10 +366,10 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration name="Parte1TestTirarYRecoger.ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="Parte5TestEquipamientoEngarzable.SeDesequipaItemsConRunasYEfectosExtrasYSeBajanLosStatsDelPersonaje" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="root-2018s1-grupo06-tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestTirarYRecoger" />
+      <module name="tp1" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -400,43 +379,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte1TestTirarYRecoger" />
-      <setting name="testName" value="ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
+      <setting name="testName" value="SeDesequipaItemsConRunasYEfectosExtrasYSeBajanLosStatsDelPersonaje" />
     </configuration>
-    <configuration name="Parte3TestApilables" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="root-2018s1-grupo06-tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Class" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte3TestApilables" />
-    </configuration>
-    <configuration name="Parte4TestEquipamiento" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="root-2018s1-grupo06-tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte4TestEquipamiento" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <envs />
-      <setting name="testKind" value="Class" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte4TestEquipamiento" />
-    </configuration>
-    <configuration name="Parte4TestEquipamiento.AlEquiparUnCascoApareceEnElSlotCorrespondiente" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="root-2018s1-grupo06-tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte4TestEquipamiento" />
+      <module name="tp1" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -446,13 +395,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte4TestEquipamiento" />
-      <setting name="testName" value="AlEquiparUnCascoApareceEnElSlotCorrespondiente" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
+      <setting name="testName" value="SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" />
     </configuration>
-    <configuration name="Parte4TestEquipamiento.PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaYEstaDesapareceDelInventario" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="root-2018s1-grupo06-tp1" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte4TestEquipamiento" />
+      <module name="tp1" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -462,8 +411,40 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="LlevoDemasiadaCargaTests.Parte4TestEquipamiento" />
-      <setting name="testName" value="PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
+      <setting name="testName" value="SeEngarzaUnaRunaYEstaDesapareceDelInventario" />
+    </configuration>
+    <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaYSusEfectosAfectanAlPersonaje" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="tp1" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
+      <setting name="testName" value="SeEngarzaUnaRunaYSusEfectosAfectanAlPersonaje" />
+    </configuration>
+    <configuration name="Parte5TestEquipamientoEngarzable.SeQuiereEngarzarUnaRunaEnUnEngarzableQueAlcanzoElMaximoYLanzaExcepsion" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="tp1" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <envs />
+      <setting name="testKind" value="Test name" />
+      <setting name="path" value="LlevoDemasiadaCargaTests.Parte5TestEquipamientoEngarzable" />
+      <setting name="testName" value="SeQuiereEngarzarUnaRunaEnUnEngarzableQueAlcanzoElMaximoYLanzaExcepsion" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -499,24 +480,24 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.Parte1TestTirarYRecoger.ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.Parte4TestEquipamiento.PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.Parte4TestEquipamiento.AlEquiparUnCascoApareceEnElSlotCorrespondiente" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.Parte4TestEquipamiento" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaYEstaDesapareceDelInventario" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaYSusEfectosAfectanAlPersonaje" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeQuiereEngarzarUnaRunaEnUnEngarzableQueAlcanzoElMaximoYLanzaExcepsion" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeDesequipaItemsConRunasYEfectosExtrasYSeBajanLosStatsDelPersonaje" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.Parte4TestEquipamiento" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.Parte4TestEquipamiento.AlEquiparUnCascoApareceEnElSlotCorrespondiente" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.Parte4TestEquipamiento.PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.Parte3TestApilables" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.Parte1TestTirarYRecoger.ElInventarioNoPuedeAgregarUnItemPorFaltaDeCapacidad" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeDesequipaItemsConRunasYEfectosExtrasYSeBajanLosStatsDelPersonaje" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeQuiereEngarzarUnaRunaEnUnEngarzableQueAlcanzoElMaximoYLanzaExcepsion" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaYSusEfectosAfectanAlPersonaje" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaYEstaDesapareceDelInventario" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1522710809945" />
+    <option name="lastUpdateTimestamp" value="1523999555243" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -567,78 +548,77 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Parte4TestEquipamiento - 2018.04.17 at 17h 22m 36s.xml">
-      <configuration name="Parte4TestEquipamiento" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeDesequipaItemsConRunasYEfectosExtrasYSeBajanLosStatsDelPersonaje - 2018.04.17 at 20h 50m 36s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeDesequipaItemsConRunasYEfectosExtrasYSeBajanLosStatsDelPersonaje" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento - 2018.04.17 at 17h 23m 59s.xml">
-      <configuration name="Parte4TestEquipamiento" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra - 2018.04.17 at 19h 43m 39s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento - 2018.04.17 at 17h 24m 18s.xml">
-      <configuration name="Parte4TestEquipamiento" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra - 2018.04.17 at 19h 44m 09s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento - 2018.04.17 at 17h 25m 25s.xml">
-      <configuration name="Parte4TestEquipamiento" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra - 2018.04.17 at 19h 45m 19s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento - 2018.04.17 at 17h 29m 11s.xml">
-      <configuration name="Parte4TestEquipamiento" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra - 2018.04.17 at 19h 46m 37s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento - 2018.04.17 at 17h 29m 30s.xml">
-      <configuration name="Parte4TestEquipamiento" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra - 2018.04.17 at 19h 46m 57s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento_AlEquiparUnCascoApareceEnElSlotCorrespondiente - 2018.04.17 at 17h 22m 20s.xml">
-      <configuration name="Parte4TestEquipamiento.AlEquiparUnCascoApareceEnElSlotCorrespondiente" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra - 2018.04.17 at 20h 33m 06s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento_PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado - 2018.04.17 at 17h 20m 03s.xml">
-      <configuration name="Parte4TestEquipamiento.PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra - 2018.04.17 at 20h 43m 20s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaROConUnaRunaMOYDanComoMasDefensaComoEfectoExtra" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento_PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado - 2018.04.17 at 17h 20m 23s.xml">
-      <configuration name="Parte4TestEquipamiento.PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeEngarzaUnaRunaYSusEfectosAfectanAlPersonaje - 2018.04.17 at 19h 32m 15s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeEngarzaUnaRunaYSusEfectosAfectanAlPersonaje" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="Parte4TestEquipamiento_PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado - 2018.04.17 at 17h 21m 54s.xml">
-      <configuration name="Parte4TestEquipamiento.PersonajeNoPuedeEquiparUnCascoSiYaTieneUnoEquipado" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="Parte5TestEquipamientoEngarzable_SeQuiereEngarzarUnaRunaEnUnEngarzableQueAlcanzoElMaximoYLanzaExcepsion - 2018.04.17 at 19h 37m 00s.xml">
+      <configuration name="Parte5TestEquipamientoEngarzable.SeQuiereEngarzarUnaRunaEnUnEngarzableQueAlcanzoElMaximoYLanzaExcepsion" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.46079692" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27416798" sideWeight="0.46412885" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27432433" sideWeight="0.5392031" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20244215" sideWeight="0.49172577" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936608" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18960468" sideWeight="0.50827426" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20919175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936608" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27416798" sideWeight="0.53587115" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20204978" sideWeight="0.49172577" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18960468" sideWeight="0.50827426" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -679,112 +659,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/ItemNoAdmitidoEnCinturonException.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/NoSePuedeEquiparException.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="102" lean-forward="false" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/CantidadDeEngarzesAlMaximo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="3" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/NoSePuedeDesequiparException.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="88" lean-forward="false" selection-start-line="2" selection-start-column="88" selection-end-line="2" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Efectos/EfectoVidaActual.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Efectos/EfectoVidaMaxima.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Item.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarAtaque.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarDefensa.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/RequerimientoFuerza.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Excepciones/NoCumpleRequerimientosException.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/Requerimientos/RequerimientoAgilidad.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/Requerimientos/RequerimientoFuerza.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="95" lean-forward="false" selection-start-line="10" selection-start-column="95" selection-end-line="10" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Pocion.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Status.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/Equipable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/TiposDeEquipables/Casco.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -871,13 +745,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Cinturon.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Engarzable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/ItemsEquipables/CascoVikingo.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -955,39 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestTirarYRecoger.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="e#34#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte5TestEquipamientoEngarzable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte4TestEquipamiento.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Personaje.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1001,7 +835,7 @@
         <state relative-caret-position="1326">
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
-            <element signature="e#29#86#0" expanded="true" />
+            <element signature="e#29#86#0" expanded="false" />
             <element signature="e#653#1016#0" expanded="false" />
             <element signature="e#1450#1734#0" expanded="false" />
           </folding>
@@ -1011,7 +845,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentarSuerte.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1027,8 +861,202 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/EfectosDeEquipables/EfectoAumentoEvasion.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="76" lean-forward="false" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte1TestTirarYRecoger.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte3TestApilables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#85#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte4TestEquipamiento.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1409">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Engarze.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/Ruby.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Gema.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Runa.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Status.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarMana.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#57#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/Esmeralda.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="e#58#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentoVidaMaxima.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarVidaMaxima.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/Ruby.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="86" lean-forward="true" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/RunaRO.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#58#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosEngarzes/EfectoEngarzeAumentarFueza.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/ItemsEngarzables/RunaMO.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="84" lean-forward="true" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
+          <folding>
+            <element signature="e#58#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/EfectosExtras.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#41#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Engarzables/Engarzable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/LlevoDemasiadaCarga/Equipables/ItemsEquipables/ArmaduraEngarzable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#56#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/LlevoDemasiadaCargaTests/Parte5TestEquipamientoEngarzable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="127" column="3" lean-forward="false" selection-start-line="127" selection-start-column="3" selection-end-line="127" selection-end-column="3" />
+          <folding>
+            <element signature="e#945#1137#0" expanded="false" />
+            <element signature="e#1211#1341#0" expanded="false" />
+            <element signature="e#1398#1529#0" expanded="false" />
+            <element signature="e#1602#1819#0" expanded="false" />
+            <element signature="e#1902#2288#0" expanded="false" />
+            <element signature="e#2362#2559#0" expanded="false" />
+            <element signature="e#2616#2813#0" expanded="false" />
+            <element signature="e#2871#3085#0" expanded="false" />
+            <element signature="e#3168#3577#0" expanded="false" />
+            <element signature="e#3646#4119#0" expanded="false" />
+            <element signature="e#4198#4730#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
