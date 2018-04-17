@@ -8,15 +8,15 @@ import org.scalatest.{BeforeAndAfter, FunSuite}
 class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
 
   // Setup Personaje
-  val inventario:Inventario = new Inventario(30)
-  val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
-  val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 10, cinturon)
+  var inventario:Inventario = new Inventario(30)
+  var cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
+  var personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 10, cinturon)
 
   // Setup Items Equipables
-  val cascoVikingo1: CascoVikingo = new CascoVikingo
-  val cascoVikingo2: CascoVikingo = new CascoVikingo
-  val armaduraCuero: ArmaduraCuero = new ArmaduraCuero
-  val espadaCorta: EspadaCorta = new EspadaCorta
+  var cascoVikingo1: CascoVikingo = new CascoVikingo
+  var cascoVikingo2: CascoVikingo = new CascoVikingo
+  var armaduraCuero: ArmaduraCuero = new ArmaduraCuero
+  var espadaCorta: EspadaCorta = new EspadaCorta
 
 
   before {
@@ -29,6 +29,7 @@ class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
     this.personaje.status.agilidad = 30
     this.personaje.status.fuerza = 30
   }
+
 
   // Casos Positivos
 
@@ -125,12 +126,6 @@ class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
     assert(this.personaje.equipo.casco.itemEquipado == this.cascoVikingo2)
 
     assertThrows[NoSePuedeEquiparException]{this.personaje.equiparItem(this.cascoVikingo1)}
-    assert(this.personaje.equipo.casco.itemEquipado == this.cascoVikingo1)
-    //assert(this.personaje.tieneItemEnInventario(this.cascoVikingo2))
   }
-
-
-
-
 
 }

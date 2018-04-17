@@ -7,7 +7,7 @@ class Inventario(val capacidadMaxima: Int) {
 
   def recogerItem(item: ItemBasico): Unit = {
     if (puedoAgregar(item.volumen)) {
-      this.items += item
+      this.items.add(item)
     }
     else throw InsuficienteEspacioException()
   }

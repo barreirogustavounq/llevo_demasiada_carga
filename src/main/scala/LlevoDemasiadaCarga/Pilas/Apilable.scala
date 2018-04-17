@@ -6,8 +6,8 @@ import LlevoDemasiadaCarga.{Inventario, ItemBasico, Personaje}
 trait Apilable extends ItemBasico
 {
   var estado:EstadoDeApilamiento = new NoApilado
-  var siguientePila:Apilable = _
-  var anteriorPila:Apilable = _
+  var siguientePila:Apilable = null
+  var anteriorPila:Apilable = null
   val volumenOriginal:Int = volumen
   var cantidadMaximaApilables:Int
   volumen = this.calcularVolumen()
