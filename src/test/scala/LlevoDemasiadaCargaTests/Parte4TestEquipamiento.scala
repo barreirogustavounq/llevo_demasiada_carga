@@ -94,6 +94,15 @@ class Parte4TestEquipamiento extends FunSuite with BeforeAndAfter {
 
   // Desequipar un ítem: Verificar efectos quitados, capacidad del inventario, slot disponible.
 
+  test("AlDesequiparUnCascoDesapareceDelSlotCorrespondiente") {}
+  test("AlDesequiparUnCascoApareceEnElInventario") {}
+  test("AlDesequiparUnCascoSeDeshacenSusEfectos") {}
+
   // Tirar un ítem equipado. Verificar: Efectos quitado, capacidad del inventario, slot disponible.
+
+  test("AlTirarUnCascoEquipadoDesapareceDelSlotCorrespondiente") {}
+  test("AlTirarUnCascoEquipadoNoApareceEnElInventario") {}
+  test("AlTirarUnCascoEquipadoSeDeshacenSusEfectos") {}
+
 
 }

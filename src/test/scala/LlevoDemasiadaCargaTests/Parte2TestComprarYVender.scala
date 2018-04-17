@@ -58,15 +58,16 @@ class Parte2TestComprarYVender extends FunSuite with BeforeAndAfter {
     assert(vendedor.inventario.tieneItem(arco))
   }
 
-  /*test("ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeEspacioYLoInformeEnPantalla"){
-    var roca:Item = new ItemBasico("Roca", 10)
+  test("ComprarUnArcoYQueLaTransaccionNoOcurraPorFaltaDeEspacioYLoInformeEnPantalla"){
+    var roca:ItemBasico = new ItemBasico("Roca", 10)
     personaje.recogerItem(roca)
-    Console.withOut(stream) { personaje.comprar(arcoLargo, vendedor) }
+    Console.withOut(stream) { personaje.comprar(arco, vendedor) }
 
     assertResult("No tienes suficiente espacio en el inventario.\n")(stream.toString)
+    personaje.tirarItem(roca)
     assert(personaje.inventario.items.isEmpty)
     assert(vendedor.inventario.tieneItem(arco))
-  }*/
+  }
 
 
 }
