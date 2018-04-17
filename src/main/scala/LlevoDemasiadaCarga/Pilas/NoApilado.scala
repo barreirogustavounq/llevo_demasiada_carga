@@ -1,5 +1,6 @@
 package LlevoDemasiadaCarga.Pilas
 
+import LlevoDemasiadaCarga.Excepciones.AtributoNoEncontradoException
 import LlevoDemasiadaCarga.{Inventario, Personaje}
 
 class NoApilado extends EstadoDeApilamiento {

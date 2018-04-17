@@ -4,41 +4,33 @@ import LlevoDemasiadaCarga.Efectos.EfectoVidaActual
 import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DiferenteTipoException}
 import LlevoDemasiadaCarga.Pilas.Apilable
+import LlevoDemasiadaCarga.Pilas.ItemsApilables.{Flecha, Saeta}
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
-class Parte3TestApilables extends FunSuite with BeforeAndAfter {
-  class Flecha extends ItemBasico("Flecha", 2) with Comerciable with Consumible with EfectoVidaActual with Apilable{
-    override val precioCompra: Int = 1
-    override val precioVenta: Int = 2
-    override var valorDeEfecto: Int = 10
-    override var cantidadDeUsos: Int = 1
-    override var cantidadMaximaApilables = 5
-  }
+import scala.collection.mutable
 
-  class Saeta extends ItemBasico("Flecha", 2) with Comerciable with Consumible with EfectoVidaActual with Apilable{
-    override val precioCompra: Int = 1
-    override val precioVenta: Int = 2
-    override var valorDeEfecto: Int = 10
-    override var cantidadDeUsos: Int = 1
-    override var cantidadMaximaApilables = 5
-  }
-  val stream = new java.io.ByteArrayOutputStream()
+class Parte3TestApilables extends FunSuite with BeforeAndAfter {
+
+
+
 
   val inventario:Inventario = new Inventario(10)
   val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
   val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 10, cinturon)
 
-  var flecha1: Flecha = new Flecha
-  var flecha2: Flecha = new Flecha
-  var flecha3: Flecha = new Flecha
-  var flecha4: Flecha = new Flecha
-  var flecha5: Flecha = new Flecha
-  var flecha6: Flecha = new Flecha
+  var flecha1: Flecha = new Flecha()
+  var flecha2: Flecha = new Flecha()
+  var flecha3: Flecha = new Flecha()
+  var flecha4: Flecha = new Flecha()
+  var flecha5: Flecha = new Flecha()
+  var flecha6: Flecha = new Flecha()
   var inventarioVendedor: Inventario = new Inventario(20)
   var vendedor: Vendedor = new Vendedor(inventarioVendedor)
 
-  before{
+  var saeta:Saeta = new Saeta
+
+ before{
     vendedor.inventario.recogerItem(flecha4)
     vendedor.inventario.recogerItem(flecha5)
     vendedor.inventario.recogerItem(flecha6)
@@ -62,7 +54,7 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
     this.vendedor.inventario.tirarTodo()
   }
 
-/*CASOS POSITIVOS */
+  /*CASOS POSITIVOS */
 
   test("Apilo3FlechasYPidoLaCantidadDeItems"){
     this.flecha1.apilar(this.flecha2, this.inventario)
@@ -103,9 +95,8 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
   /*------- Test de ventas -------*/
 
   test("VendoUnaPilaDe3FlechasYElPersonajeYaNoTieneLaPilaEnElInventario"){
-    this.flecha1.apilar(this.flecha2, this.inventario)
     this.flecha1.apilar(this.flecha3, this.inventario)
-    assert(this.personaje.tieneItemEnInventario(flecha1))
+    assert(this.personaje.inventario.tieneItem(this.flecha1))
 
     this.personaje.vender(this.flecha1, vendedor)
     assert(!this.personaje.tieneItemEnInventario(this.flecha1))
@@ -156,7 +147,7 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
     assert(!this.vendedor.inventario.tieneItem(flecha4))
   }
 
-  /*CASOS NEGATIVOS*/
+  /* CASOS NEGATIVOS */
 
   test("NoSePuedeApilarUnaFlechaConUnaSaeta"){
     var flechaNueva:Flecha = new Flecha
@@ -184,5 +175,4 @@ class Parte3TestApilables extends FunSuite with BeforeAndAfter {
       this.flecha1.apilar(flecha6, this.personaje.inventario)
     }
   }
-
 }

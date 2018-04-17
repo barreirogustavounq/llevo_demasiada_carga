@@ -1,7 +1,7 @@
 package LlevoDemasiadaCarga
 
 import LlevoDemasiadaCarga.Equipables.TiposDeEquipables._
-import LlevoDemasiadaCarga.Equipables.{Equipable, ItemsEquipables, Slot}
+import LlevoDemasiadaCarga.Equipables.{Equipable, Slot}
 import LlevoDemasiadaCarga.Excepciones.{NoSePuedeDesequiparException, NoSePuedeEquiparException}
 
 class Equipo(val personaje: Personaje){
@@ -17,16 +17,6 @@ class Equipo(val personaje: Personaje){
   var guantes:Slot = new Slot
   var cinturon:Slot = new Slot
   var torso:Slot = new Slot
-
-  /*def puedeEquiparItem(item: ItemEquipable): Boolean =
-  {
-    var contador : Int = 0
-    for( r <- item.requerimientos)
-    {
-      if(status.filter(_.eq(r.nombre)).head.cantidad >= r.cantidad){ contador + 1}
-    }
-    contador == item.requerimientos.size
-  }*/
 
   private def equiparITemEnSlot(item : ItemEquipable, slot: Slot): Unit = {
     this.puedeEquipar(slot) // Chequea que no haya nada en el slot, sino salta una exception
@@ -50,28 +40,17 @@ class Equipo(val personaje: Personaje){
 
   def equiparItem(item : ItemEquipable): Unit = {
     item match {
-      case i:Casco => this.equiparITemEnSlot(i, this.casco)
-      case i:ManoIzquierda => this.equiparITemEnSlot(i, this.manoIzquierda)
-      case i:ManoDerecha => this.equiparITemEnSlot(i, this.manoDerecha)
-      case i:Botas => this.equiparITemEnSlot(i, this.botas)
-      case i:Amuleto => this.equiparITemEnSlot(i, this.amuleto)
-      case i:AnilloIzquierdo => this.equiparITemEnSlot(i, this.anilloIzquierda)
-      case i:AnilloDerecho => this.equiparITemEnSlot(i, this.anilloDerecha)
-      case i:Guantes => this.equiparITemEnSlot(i, this.guantes)
-      case i:ItemsEquipables.Cinturon => this.equiparITemEnSlot(i, this.cinturon)
-      case i:Torso => this.equiparITemEnSlot(i, this.torso)
+      case i: Casco => this.equiparITemEnSlot(i, this.casco)
+      case i: ManoIzquierda => this.equiparITemEnSlot(i, this.manoIzquierda)
+      case i: ManoDerecha => this.equiparITemEnSlot(i, this.manoDerecha)
+      case i: Botas => this.equiparITemEnSlot(i, this.botas)
+      case i: Amuleto => this.equiparITemEnSlot(i, this.amuleto)
+      case i: AnilloIzquierdo => this.equiparITemEnSlot(i, this.anilloIzquierda)
+      case i: AnilloDerecho => this.equiparITemEnSlot(i, this.anilloDerecha)
+      case i: Guantes => this.equiparITemEnSlot(i, this.guantes)
+      case i: Cinturon => this.equiparITemEnSlot(i, this.cinturon)
+      case i: Torso => this.equiparITemEnSlot(i, this.torso)
     }
-    /*if(puedeEquiparItem(item)) {
-      for(s <- slotsEquipables) {
-        if(s.lugar == item.lugarDondeSeEquipa) {
-          if(s.estaEquipado()) {
-            inventario.recogerItem(s.itemEquipado)
-            equiparITemEnSlot(item, s)
-          }
-          else { equiparITemEnSlot(item, s) }
-        }
-      }
-    }*/
   }
 
   def desequiparItem(item: ItemEquipable): Unit = {
@@ -84,15 +63,9 @@ class Equipo(val personaje: Personaje){
       case i:AnilloIzquierdo => this.desequiparITemEnSlot(i, this.anilloIzquierda)
       case i:AnilloDerecho => this.desequiparITemEnSlot(i, this.anilloDerecha)
       case i:Guantes => this.desequiparITemEnSlot(i, this.guantes)
-      case i:ItemsEquipables.Cinturon => this.desequiparITemEnSlot(i, this.cinturon)
+      case i:Cinturon => this.desequiparITemEnSlot(i, this.cinturon)
       case i:Torso => this.desequiparITemEnSlot(i, this.torso)
     }
-
-    /*if(slot.estaEquipado()) {
-      // ToDo: Pendiente. Retirar efectos del item.
-      inventario.recogerItem(slot.itemEquipado)
-      tirarItemEquipado(slot)
-    }*/
   }
 
   def tirarItemEquipado(item: ItemEquipable): Unit = {
@@ -105,7 +78,7 @@ class Equipo(val personaje: Personaje){
       case i:AnilloIzquierdo => this.tirarITemEnSlot(i, this.anilloIzquierda)
       case i:AnilloDerecho => this.tirarITemEnSlot(i, this.anilloDerecha)
       case i:Guantes => this.tirarITemEnSlot(i, this.guantes)
-      case i:ItemsEquipables.Cinturon => this.tirarITemEnSlot(i, this.cinturon)
+      case i:Cinturon => this.tirarITemEnSlot(i, this.cinturon)
       case i:Torso => this.tirarITemEnSlot(i, this.torso)
     }
   }
