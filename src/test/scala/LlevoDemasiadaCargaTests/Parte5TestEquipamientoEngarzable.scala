@@ -8,19 +8,19 @@ import org.scalatest.{BeforeAndAfter, FunSuite}
 
 class Parte5TestEquipamientoEngarzable extends FunSuite with BeforeAndAfter {
 
-  val inventario:Inventario = new Inventario(20)
-  val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
-  val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 10, cinturon)
+  val inventario: Inventario = new Inventario(20)
+  val cinturon: Cinturon = new Cinturon("Cinturon de Cuero", 3)
+  val personaje: Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 10, cinturon)
 
   var inventarioVendedor: Inventario = new Inventario(20)
   var vendedor: Vendedor = new Vendedor(inventarioVendedor)
 
-  var armaduraEngarzable:ArmaduraEngarzable = new ArmaduraEngarzable
-  var ruby:Ruby = new Ruby
-  var runaMO:RunaMO = new RunaMO
-  var runaRO:RunaRO = new RunaRO
+  var armaduraEngarzable: ArmaduraEngarzable = new ArmaduraEngarzable
+  var ruby: Ruby = new Ruby
+  var runaMO: RunaMO = new RunaMO
+  var runaRO: RunaRO = new RunaRO
 
-  before{
+  before {
     this.personaje.recogerItem(this.armaduraEngarzable)
     this.personaje.recogerItem(this.ruby)
     this.personaje.recogerItem(this.runaMO)
@@ -59,7 +59,9 @@ class Parte5TestEquipamientoEngarzable extends FunSuite with BeforeAndAfter {
     this.armaduraEngarzable.engarzar(ruby2, this.personaje)
     this.armaduraEngarzable.engarzar(ruby3, this.personaje)
 
-    assertThrows[CantidadDeEngarzesAlMaximo] {this.armaduraEngarzable.engarzar(ruby4, this.personaje)}
+    assertThrows[CantidadDeEngarzesAlMaximo] {
+      this.armaduraEngarzable.engarzar(ruby4, this.personaje)
+    }
   }
 
   /* RUNAS */
@@ -88,14 +90,16 @@ class Parte5TestEquipamientoEngarzable extends FunSuite with BeforeAndAfter {
   }
 
   test("SeQuiereEngarzarUnaRunaEnUnEngarzableQueAlcanzoElMaximoYLanzaExcepsion") {
-    var runaRO2:RunaRO = new RunaRO
-    var runaRO3:RunaRO = new RunaRO
-    var runaRO4:RunaRO = new RunaRO
+    var runaRO2: RunaRO = new RunaRO
+    var runaRO3: RunaRO = new RunaRO
+    var runaRO4: RunaRO = new RunaRO
     this.armaduraEngarzable.engarzar(this.runaRO, this.personaje)
     this.armaduraEngarzable.engarzar(runaRO2, this.personaje)
     this.armaduraEngarzable.engarzar(runaRO3, this.personaje)
 
-    assertThrows[CantidadDeEngarzesAlMaximo] {this.armaduraEngarzable.engarzar(runaRO4, this.personaje)}
+    assertThrows[CantidadDeEngarzesAlMaximo] {
+      this.armaduraEngarzable.engarzar(runaRO4, this.personaje)
+    }
   }
 
   test("SeEngarzaUnaRunaROConUnaRunaMOYDanMasDefensaYEfectoExtra") {
@@ -126,3 +130,4 @@ class Parte5TestEquipamientoEngarzable extends FunSuite with BeforeAndAfter {
     assert(this.personaje.status.fuerza == 0)
     assert(this.personaje.status.defensa == 0)
   }
+}

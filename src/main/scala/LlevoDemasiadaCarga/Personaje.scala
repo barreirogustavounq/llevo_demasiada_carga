@@ -1,5 +1,6 @@
 package LlevoDemasiadaCarga
 
+import LlevoDemasiadaCarga.EfectoMagico.Magico
 import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga.Equipables.{Equipable, Slot}
 
@@ -59,7 +60,7 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
     this.equipo.tirarItemEquipado(item)
   }
 
-  def identificarItem(item : ItemMagico, pergamino : Pergamino): Unit =
+  def identificarItem(item : ItemBasico with Magico, pergamino : Pergamino): Unit =
   {
     if(tieneItemEnInventario(pergamino))
     {

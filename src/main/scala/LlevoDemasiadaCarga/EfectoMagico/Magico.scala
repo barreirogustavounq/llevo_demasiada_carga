@@ -4,17 +4,17 @@ import LlevoDemasiadaCarga.Equipables.Equipable
 import LlevoDemasiadaCarga.Equipables.TiposDeEquipables._
 import LlevoDemasiadaCarga.{ItemBasico, Personaje}
 
-trait Magico[T,S] extends ItemBasico with Equipable with T with S
+trait Magico extends ItemBasico with Equipable
 {
-  
+
   var identificado = false
   var nuevoVolumen : Int
 
-  private def modificarVolumen() = this.volumen = nuevoVolumen
-  private def aumentarDaño(personaje: Personaje) = personaje.status.ataque *= 2
-  private def aumentarDefensa(personaje: Personaje) = personaje.status.defensa += 20
-  private def disminuirDaño(personaje: Personaje) = personaje.status.ataque /= 2
-  private def disminuirDefensa(personaje: Personaje) = personaje.status.defensa -= 20
+  private def modificarVolumen() : Unit = this.volumen = nuevoVolumen
+  private def aumentarDaño(personaje: Personaje): Unit  = personaje.status.ataque *= 2
+  private def aumentarDefensa(personaje: Personaje): Unit  = personaje.status.defensa += 20
+  private def disminuirDaño(personaje: Personaje): Unit  = personaje.status.ataque /= 2
+  private def disminuirDefensa(personaje: Personaje): Unit  = personaje.status.defensa -= 20
 
   override def equipar(personaje: Personaje): Unit =
     {
