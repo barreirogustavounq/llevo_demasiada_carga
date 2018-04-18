@@ -1,19 +1,12 @@
 package LlevoDemasiadaCargaTests
 
-import LlevoDemasiadaCarga.EfectosUsables.EfectoVidaActual
 import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DiferenteTipoException}
-import LlevoDemasiadaCarga.Pilas.Apilable
 import LlevoDemasiadaCarga.Pilas.ItemsApilables.{Flecha, Saeta}
 import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
-import scala.collection.mutable
-
 class Parte3TestApilables extends FunSuite with BeforeAndAfter {
-
-
-
 
   val inventario:Inventario = new Inventario(10)
   val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)

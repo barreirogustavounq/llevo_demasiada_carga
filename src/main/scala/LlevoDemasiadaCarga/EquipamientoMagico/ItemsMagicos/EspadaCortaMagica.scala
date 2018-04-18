@@ -5,4 +5,5 @@ import LlevoDemasiadaCarga.EquipamientoMagico.EfectosMagicos.EfectoMagicoVolumen
 import LlevoDemasiadaCarga.EquipamientoMagico.Magico
 
 class EspadaCortaMagica extends EspadaCorta with Magico with EfectoMagicoVolumen{
+  override var volumenNuevo: Int = 1
 }
