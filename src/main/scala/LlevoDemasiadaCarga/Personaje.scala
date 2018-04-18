@@ -58,4 +58,13 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
   def tirarItemEquipado(item: ItemBasico with Equipable): Unit ={
     this.equipo.tirarItemEquipado(item)
   }
+
+  def identificarItem(item : ItemMagico, pergamino : Pergamino): Unit =
+  {
+    if(tieneItemEnInventario(pergamino))
+    {
+      pergamino.usar(this, item)
+    }
+  }
+
 }
