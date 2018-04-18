@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga
 
-import LlevoDemasiadaCarga.EfectoMagico.Magico
+import LlevoDemasiadaCarga.EquipamientoMagico.{Magico, Pergamino}
 import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga.Equipables.{Equipable, Slot}
 

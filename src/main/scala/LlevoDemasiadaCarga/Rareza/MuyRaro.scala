@@ -4,5 +4,5 @@ import LlevoDemasiadaCarga.Comerciable
 
 trait MuyRaro extends Comerciable
 {
-  override def calcularPrecioCompra(): Int = super.calcularPrecioCompra * 2
+  override def calcularPrecioCompra(): Int = super.calcularPrecioCompra * 3
 }

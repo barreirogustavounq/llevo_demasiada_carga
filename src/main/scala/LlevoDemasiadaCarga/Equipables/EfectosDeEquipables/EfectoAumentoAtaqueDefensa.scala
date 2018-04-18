@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga.Equipables.EfectosDeEquipables
 
-import LlevoDemasiadaCarga.EfectoMagico.Magico
+import LlevoDemasiadaCarga.EquipamientoMagico.Magico
 import LlevoDemasiadaCarga.Personaje
 
 trait EfectoAumentoAtaqueDefensa extends  Magico with EfectoAumentarAtaque with EfectoAumentarDefensa

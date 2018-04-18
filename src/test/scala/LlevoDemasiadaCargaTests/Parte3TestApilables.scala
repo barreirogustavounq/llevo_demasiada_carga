@@ -1,6 +1,6 @@
 package LlevoDemasiadaCargaTests
 
-import LlevoDemasiadaCarga.Efectos.EfectoVidaActual
+import LlevoDemasiadaCarga.EfectosUsables.EfectoVidaActual
 import LlevoDemasiadaCarga.Equipables.ItemsEquipables.Cinturon
 import LlevoDemasiadaCarga.Excepciones.{CantidadDeApilablesAlMaximoException, DiferenteTipoException}
 import LlevoDemasiadaCarga.Pilas.Apilable

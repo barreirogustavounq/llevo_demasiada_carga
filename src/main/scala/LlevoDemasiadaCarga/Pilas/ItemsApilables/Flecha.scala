@@ -1,6 +1,6 @@
 package LlevoDemasiadaCarga.Pilas.ItemsApilables
 
-import LlevoDemasiadaCarga.Efectos.EfectoVidaActual
+import LlevoDemasiadaCarga.EfectosUsables.EfectoVidaActual
 import LlevoDemasiadaCarga.Pilas.Apilable
 import LlevoDemasiadaCarga.{Comerciable, Consumible, ItemBasico}
 

@@ -1,4 +1,4 @@
-package LlevoDemasiadaCarga.Efectos
+package LlevoDemasiadaCarga.EfectosUsables
 
 import LlevoDemasiadaCarga.Personaje
 
