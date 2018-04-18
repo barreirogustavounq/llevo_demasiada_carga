@@ -25,9 +25,15 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
 
   def vender(item: Comerciable, vendedor: Vendedor): Unit = { vendedor.comprar(item, this) }
 
-  def recogerItem(item : ItemBasico){ inventario.recogerItem(item) }
+  def recogerItem(item : ItemBasico){
+    inventario.recogerItem(item)
+    item.recoger(this)
+  }
 
-  def tirarItem(item : ItemBasico) {inventario.tirarItem(item)}
+  def tirarItem(item : ItemBasico) {
+    inventario.tirarItem(item)
+    item.tirar(this)
+  }
 
   def usarItem(item : Item) { item.usar(this)}
 
@@ -58,14 +64,12 @@ class Personaje(val nombre:String, var vidaMaxima: Int, var armadura:Int, var at
 
   def tirarItemEquipado(item: ItemBasico with Equipable): Unit ={
     this.equipo.tirarItemEquipado(item)
+    item.tirar(this)
   }
 
   def identificarItem(item : ItemBasico with Magico, pergamino : Pergamino): Unit =
   {
-    if(tieneItemEnInventario(pergamino))
-    {
-      pergamino.usar(this, item)
-    }
+    item.identificar(pergamino, this)
   }
 
 }

@@ -5,6 +5,13 @@ class ItemBasico(val nombre: String,var volumen: Int) extends Item{
   val precioVenta: Int = 0
   val precioCompra: Int = 0
 
+  def recoger(personaje: Personaje): Unit ={
+
+  }
+
+  def tirar(personaje: Personaje): Unit ={
+
+  }
 
   def calcularPrecioCompra():Int={
     return precioCompra
