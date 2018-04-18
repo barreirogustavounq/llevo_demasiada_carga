@@ -1,13 +1,31 @@
 package LlevoDemasiadaCargaTests
 
+import LlevoDemasiadaCarga.Equipables.ItemsEquipables.{ArmaduraEngarzable, Cinturon, EspadaCorta}
+import LlevoDemasiadaCarga.Rareza.Unico
+import LlevoDemasiadaCarga._
 import org.scalatest.{BeforeAndAfter, FunSuite}
 
 class Parte6TestEquipamientosMagicos extends FunSuite with BeforeAndAfter {
+  val inventario:Inventario = new Inventario(20)
+  val cinturon:Cinturon = new Cinturon("Cinturon de Cuero", 3)
+  val personaje:Personaje = new Personaje("Pedro", 100, 10, 5, inventario, 10, cinturon)
+
+  var inventarioVendedor: Inventario = new Inventario(20)
+  var vendedor: Vendedor = new Vendedor(inventarioVendedor)
+
+  var espadaMagica: EspadaCorta = new EspadaCorta
+
+  before{
+    this.personaje.recogerItem(this.espadaMagica)
+
+  }
 
   // Modelar los ítems equipables mágicos, permitiendo:
 
   // * Equiparlos cuando se pueda
-  test("ElPersonajeEquipaUnaEspadaMagicaQueAumentaLaVidaMaxima") {}
+  test("ElPersonajeEquipaUnaEspadaMagicaQueAumentaLaVidaMaxima")
+  {
+  }
   test("ElPersonajeEquipaUnCascoMagicoQueTieneDuplicadaSuDefensa") {}
   test("ElPersonajeRecogeUnaArmaduraMagicaQueTieneDisminuidoSuVolumen") {}
   test("ElPersonajeNoPuedeRecogerUnGuanteMagicoQueTieneAumentadoSuVolumen") {}

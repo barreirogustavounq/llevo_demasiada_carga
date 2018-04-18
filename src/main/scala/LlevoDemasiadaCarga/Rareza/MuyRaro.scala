@@ -1,6 +1,8 @@
 package LlevoDemasiadaCarga.Rareza
 
-class MuyRaro extends TipoRareza
+import LlevoDemasiadaCarga.Comerciable
+
+trait MuyRaro extends Comerciable
 {
   override def calcularPrecioCompra(): Int = super.calcularPrecioCompra * 2
 }

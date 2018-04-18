@@ -1,12 +1,14 @@
-package LlevoDemasiadaCarga
+package LlevoDemasiadaCarga.EfectoMagico
 
 import LlevoDemasiadaCarga.Equipables.Equipable
 import LlevoDemasiadaCarga.Equipables.TiposDeEquipables._
-import LlevoDemasiadaCarga.Rareza.TipoRareza
+import LlevoDemasiadaCarga.{ItemBasico, Personaje}
 
-class ItemMagico( nuevoVolumen : Int, val rareza : TipoRareza, val item : ItemBasico) extends ItemBasico(item.nombre, item.volumen) with Equipable
+trait Magico[T,S] extends ItemBasico with Equipable with T with S
 {
+  
   var identificado = false
+  var nuevoVolumen : Int
 
   private def modificarVolumen() = this.volumen = nuevoVolumen
   private def aumentarDaño(personaje: Personaje) = personaje.status.ataque *= 2
